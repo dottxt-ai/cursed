@@ -39,5 +39,6 @@ with these.
 - [this rust code](https://github.com/loyston500/cursed-codes/blob/main/rust/hello.rs) is gross as hell
 - [rockstar](https://codewithrockstar.com/) is an esoteric programming language where you write code in the form of hair metal power ballads
 - [websim](https://websim.ai/) is an AI-powered platform that randomly invents webpages. Type in a URL, get the language model's best guess of what that webpage would look like. It's a playground.
+- [gcc-torture](https://github.com/llvm/llvm-test-suite/tree/main/SingleSource/Regression/C/gcc-c-torture) are tests playing with the C language to test compilers to the edge. 
 
 
