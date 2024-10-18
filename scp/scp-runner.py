@@ -1,13 +1,13 @@
-import outlines
-from pydantic import BaseModel, Field
-from typing import List, Optional
-from enum import Enum
 import json
 import os
 from datetime import datetime
+from enum import Enum
+from typing import List, Optional
 
+import outlines
 from api import create_completion
 from classes import SCP, Reviewer, apply_scp_theme, reviewer_prompt, scp_prompt
+from pydantic import BaseModel, Field
 
 # Where the entries are stored
 scp_dir = "entries"

@@ -21,9 +21,10 @@ import hashlib
 import json
 import os
 import time
+from typing import Optional
+
 import requests
 from dotenv import load_dotenv
-from typing import Optional
 from requests.exceptions import HTTPError
 
 load_dotenv(override=True)
@@ -32,9 +33,11 @@ load_dotenv(override=True)
 API_HOST = os.environ.get("DOTTXT_API_HOST", None)
 API_KEY = os.environ.get("DOTTXT_API_KEY", None)
 
+
 def check_api_key() -> None:
     if not API_KEY:
         raise ValueError("DOTTXT_API_KEY environment variable is not set")
+
 
 def get_headers(api_key: Optional[str] = None) -> dict:
     if api_key is None:
@@ -42,12 +45,15 @@ def get_headers(api_key: Optional[str] = None) -> dict:
         api_key = API_KEY
     return {"Authorization": f"Bearer {api_key}"}
 
+
 SCHEMA_HASH_TO_COMPLETION_URL = {}
+
 
 def to_hash(pydantic_class):
     schema = pydantic_class.model_json_schema()
     schema_string = json.dumps(schema)
     return hashlib.sha256(schema_string.encode()).hexdigest()
+
 
 def poll_status(url: str, api_key: Optional[str] = None) -> dict:
     headers = get_headers(api_key)
@@ -59,15 +65,16 @@ def poll_status(url: str, api_key: Optional[str] = None) -> dict:
         time.sleep(1)
     return status_json
 
+
 def get_schema_by_name(name: str, api_key: Optional[str] = None) -> Optional[dict]:
     headers = get_headers(api_key)
     try:
         response = requests.get(f"https://{API_HOST}/v1/json-schemas", headers=headers)
         response.raise_for_status()
-        schemas = response.json()['items']
+        schemas = response.json()["items"]
 
         for schema in schemas:
-            if schema['name'] == name:
+            if schema["name"] == name:
                 return schema
         return None
     except HTTPError as e:
@@ -86,21 +93,12 @@ def create_schema(schema: str, name: str, api_key: Optional[str] = None) -> dict
     headers = get_headers(api_key)
     try:
         response = requests.post(
-            f"https://{API_HOST}/v1/json-schemas",
-            headers=headers,
-            json=data
+            f"https://{API_HOST}/v1/json-schemas", headers=headers, json=data
         )
         response.raise_for_status()
         return response.json()
     except HTTPError as e:
-        # Display the response body
-        print(e.response.text)
-        if e.response.status_code == 403:
-            raise ValueError("Authentication failed. Please check your API key.") from e
-        else:
-            raise
-    except Exception as e:
-        raise
+        raise e
 
 
 def get_completion_endpoint(model_class, api_key: Optional[str] = None):
@@ -138,11 +136,9 @@ def get_completion_endpoint(model_class, api_key: Optional[str] = None):
     SCHEMA_HASH_TO_COMPLETION_URL[schema_hash] = completion_url
     return completion_url
 
+
 def create_completion(
-    model_class,
-    prompt: str,
-    max_tokens: int = 31999,
-    api_key: Optional[str] = None
+    model_class, prompt: str, max_tokens: int = 31999, api_key: Optional[str] = None
 ):
     completion_url = get_completion_endpoint(model_class, api_key)
     data = {"prompt": prompt, "max_tokens": max_tokens}
@@ -154,6 +150,6 @@ def create_completion(
     completion_response_json = completion_response.json()
 
     # convert to pydantic model
-    model = model_class.model_validate_json(completion_response_json['data'])
+    model = model_class.model_validate_json(completion_response_json["data"])
 
     return model

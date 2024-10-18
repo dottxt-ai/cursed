@@ -6,12 +6,13 @@ part of the curse is the ugly code
 - cameron
 """
 
-from datetime import datetime
 import os
+from datetime import datetime
+from enum import Enum
+from typing import List, Optional
 
 from pydantic import BaseModel, Field
-from typing import List, Optional
-from enum import Enum
+
 
 # This is used to guide the model to produce the correct type of SCP entry
 class EntryType(str, Enum):
@@ -115,6 +116,7 @@ class EntryType(str, Enum):
     DOCUMENTATION_AFFECTING = "Documentation-Affecting SCP"
     REALITY_BENDING_NARRATIVE = "Reality-Bending Narrative Element"
 
+
 class ObjectClass(str, Enum):
     SAFE = "Safe"
     EUCLID = "Euclid"
@@ -122,35 +124,64 @@ class ObjectClass(str, Enum):
     THAUMIEL = "Thaumiel"
     # Add other classes as needed
 
+
 class ContainmentProcedures(BaseModel):
-    physical_requirements: str = Field(..., description="Physical requirements for containing the SCP")
-    security_measures: str = Field(..., description="Security measures required for the SCP")
-    handling_instructions: str = Field(..., description="Instructions for handling the SCP")
-    other_precautions: Optional[str] = Field(None, description="Additional precautions if necessary")
+    physical_requirements: str = Field(
+        ..., description="Physical requirements for containing the SCP"
+    )
+    security_measures: str = Field(
+        ..., description="Security measures required for the SCP"
+    )
+    handling_instructions: str = Field(
+        ..., description="Instructions for handling the SCP"
+    )
+    other_precautions: Optional[str] = Field(
+        None, description="Additional precautions if necessary"
+    )
+
 
 class Description(BaseModel):
-    physical_appearance: Optional[str] = Field(None, description="Physical description of the SCP")
-    anomalous_properties: str = Field(..., description="Anomalous properties of the SCP")
+    physical_appearance: Optional[str] = Field(
+        None, description="Physical description of the SCP"
+    )
+    anomalous_properties: str = Field(
+        ..., description="Anomalous properties of the SCP"
+    )
     origin: Optional[str] = Field(None, description="Origin of the SCP, if known")
-    relevant_history: Optional[str] = Field(None, description="Relevant historical information about the SCP")
+    relevant_history: Optional[str] = Field(
+        None, description="Relevant historical information about the SCP"
+    )
+
 
 class Addendum(BaseModel):
     title: str = Field(..., description="Title of the addendum")
     content: str = Field(..., description="Content of the addendum")
 
+
 class Note(BaseModel):
     content: str = Field(..., description="Content of the note")
 
+
 class SCP(BaseModel):
     entry_type: EntryType = Field(..., description="Type of the SCP entry")
-    item_number: str = Field(..., pattern=r"^SCP-\d+$", description="Unique identifier for the SCP")
-    object_class: ObjectClass = Field(..., description="Classification of the SCP's containment difficulty")
+    item_number: str = Field(
+        ..., pattern=r"^SCP-\d+$", description="Unique identifier for the SCP"
+    )
+    object_class: ObjectClass = Field(
+        ..., description="Classification of the SCP's containment difficulty"
+    )
 
     # Putting description here because it guides the rest of the generation
     description: Description = Field(..., description="Detailed description of the SCP")
-    containment_procedures: ContainmentProcedures = Field(..., description="Procedures for containing the SCP")
-    addenda: List[Addendum] = Field(default_factory=list, description="Additional information about the SCP")
-    notes: List[Note] = Field(default_factory=list, description="Miscellaneous notes about the SCP")
+    containment_procedures: ContainmentProcedures = Field(
+        ..., description="Procedures for containing the SCP"
+    )
+    addenda: List[Addendum] = Field(
+        default_factory=list, description="Additional information about the SCP"
+    )
+    notes: List[Note] = Field(
+        default_factory=list, description="Miscellaneous notes about the SCP"
+    )
 
     def filepath(self, scp_dir):
         return os.path.join(scp_dir, f"{self.item_number}.txt")
@@ -178,9 +209,13 @@ class SCP(BaseModel):
         content += "\n## Description\n\n"
 
         if self.description.physical_appearance:
-            content += f"**Physical Appearance:** {self.description.physical_appearance}\n\n"
+            content += (
+                f"**Physical Appearance:** {self.description.physical_appearance}\n\n"
+            )
 
-        content += f"**Anomalous Properties:** {self.description.anomalous_properties}\n\n"
+        content += (
+            f"**Anomalous Properties:** {self.description.anomalous_properties}\n\n"
+        )
 
         if self.description.origin:
             content += f"**Origin:** {self.description.origin}\n\n"
@@ -191,7 +226,9 @@ class SCP(BaseModel):
         if self.addenda:
             content += "## Addenda\n\n"
             for index, addendum in enumerate(self.addenda, start=1):
-                content += f"### Addendum {self.item_number}.{index}: {addendum.title}\n\n"
+                content += (
+                    f"### Addendum {self.item_number}.{index}: {addendum.title}\n\n"
+                )
                 content += f"{addendum.content}\n\n"
 
         if self.notes:
@@ -208,7 +245,9 @@ class SCP(BaseModel):
         # Check for existing files with the same SCP number
         if os.path.exists(file_path):
             existing_files = [f for f in os.listdir(scp_dir) if f.startswith("SCP-")]
-            existing_numbers = [int(f.split("-")[1].split(".")[0]) for f in existing_files]
+            existing_numbers = [
+                int(f.split("-")[1].split(".")[0]) for f in existing_files
+            ]
             new_number = max(existing_numbers) + 1
             old_number = self.item_number
             self.item_number = f"SCP-{new_number:03d}"
@@ -218,14 +257,20 @@ class SCP(BaseModel):
             for field_name, field in self.model_fields.items():
                 value = getattr(self, field_name)
                 if isinstance(value, str):
-                    setattr(self, field_name, value.replace(old_number, self.item_number))
+                    setattr(
+                        self, field_name, value.replace(old_number, self.item_number)
+                    )
                 elif isinstance(value, list):
                     for i, item in enumerate(value):
                         if isinstance(item, BaseModel):
                             for sub_field_name, sub_field in item.model_fields.items():
                                 sub_value = getattr(item, sub_field_name)
                                 if isinstance(sub_value, str):
-                                    setattr(item, sub_field_name, sub_value.replace(old_number, self.item_number))
+                                    setattr(
+                                        item,
+                                        sub_field_name,
+                                        sub_value.replace(old_number, self.item_number),
+                                    )
                         elif isinstance(item, str):
                             value[i] = item.replace(old_number, self.item_number)
 
@@ -267,7 +312,9 @@ class SCP(BaseModel):
         if self.addenda:
             content += "<h2>Addenda</h2>"
             for index, addendum in enumerate(self.addenda, start=1):
-                content += f"<h3>Addendum {self.item_number}.{index}: {addendum.title}</h3>"
+                content += (
+                    f"<h3>Addendum {self.item_number}.{index}: {addendum.title}</h3>"
+                )
                 content += f"<p>{addendum.content}</p>"
 
         if self.notes:
@@ -341,6 +388,7 @@ def apply_scp_theme(content):
     </html>
     """
 
+
 def scp_system_prompt(json_schema: str) -> str:
     return f"""
     Your role is to create SCP entries. An SCP entry is a document that
@@ -372,10 +420,12 @@ def scp_system_prompt(json_schema: str) -> str:
 
     """
 
+
 def scp_user_prompt() -> str:
     return """
     Please produce an SCP entry.
     """
+
 
 def scp_prompt() -> str:
     # Make the JSON schema
@@ -393,6 +443,7 @@ def scp_prompt() -> str:
     <|im_start|>assistant
     """
 
+
 # ██████╗ ███████╗██╗   ██╗██╗███████╗██╗    ██╗
 # ██╔══██╗██╔════╝██║   ██║██║██╔════╝██║    ██║
 # ██████╔╝█████╗  ██║   ██║██║█████╗  ██║ █╗ ██║
@@ -400,32 +451,35 @@ def scp_prompt() -> str:
 # ██║  ██║███████╗ ╚████╔╝ ██║███████╗╚███╔███╔╝
 # ╚═╝  ╚═╝╚══════╝  ╚═══╝  ╚═╝╚══════╝ ╚══╝╚══╝
 
+
 class ReviewNote(BaseModel):
     positive: bool = Field(
         ...,
-        description="Whether the note is positive or negative. Positive notes are notes that are helpful and constructive, while negative notes are notes that are critical and suggest improvement."
+        description="Whether the note is positive or negative. Positive notes are notes that are helpful and constructive, while negative notes are notes that are critical and suggest improvement.",
     )
     note: str = Field(
         ...,
-        description="A note about the SCP entry. This can be a suggestion, a question, or any other note."
+        description="A note about the SCP entry. This can be a suggestion, a question, or any other note.",
     )
+
 
 class PublishDecision(BaseModel):
     should_publish: bool = Field(
         ...,
-        description="A choice to publish the SCP entry. If true, the SCP entry will be published. If false, the SCP entry will be rejected, and regenerated."
+        description="A choice to publish the SCP entry. If true, the SCP entry will be published. If false, the SCP entry will be rejected, and regenerated.",
     )
     suggestions: Optional[List[str]] = Field(
         None,
-        description="A list of suggestions for the SCP entry for the writer to consider when improving the SCP entry."
+        description="A list of suggestions for the SCP entry for the writer to consider when improving the SCP entry.",
     )
+
 
 class Reviewer(BaseModel):
     intial_notes: List[ReviewNote] = Field(
         ...,
         description="""
         Any initial notes you have about the SCP entry. Describe what you think is good and bad about it.
-        """
+        """,
     )
     initial_review_score: int = Field(
         ...,
@@ -435,7 +489,7 @@ class Reviewer(BaseModel):
         Scores between 7 and 10 are considered good, and scores between 4 and 6 are considered average.
         Scores of 1 to 3 are considered bad. Consider tone, clarity, and helpfulness when
         providing a score.
-        """
+        """,
     )
 
     review_reflection: List[ReviewNote] = Field(
@@ -443,7 +497,7 @@ class Reviewer(BaseModel):
         description="""
         Reflect on the initial review. Does it seem constructive? Does it seem helpful?
         What could be improved? What suggestions do you have?
-        """
+        """,
     )
 
     final_review_score: int = Field(
@@ -453,7 +507,7 @@ class Reviewer(BaseModel):
         You must provide a score between 1 and 10, and a detailed explanation of the score.
         Scores between 7 and 10 are considered good, and scores between 4 and 6 are considered average.
         Scores of 1 to 3 are considered bad. Consider tone, clarity, and helpfulness when providing a score.
-        """
+        """,
     )
 
     should_publish: bool = Field(
@@ -461,7 +515,7 @@ class Reviewer(BaseModel):
         description="""
         A choice to publish the SCP entry. If true, the SCP entry will be published.
         If false, the SCP entry will be rejected, and regenerated.
-        """
+        """,
     )
 
     def __str__(self):
@@ -525,6 +579,7 @@ def reviewer_prompt(entry: SCP) -> str:
     <|im_start|>assistant
     """
 
+
 def redo_prompt(result: SCP, feedback: Reviewer) -> str:
     scp_json_schema = SCP.model_json_schema()
     return f"""
@@ -548,4 +603,3 @@ def redo_prompt(result: SCP, feedback: Reviewer) -> str:
     <|im_end|>
     <|im_start|>assistant
     """
-
