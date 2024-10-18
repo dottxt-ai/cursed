@@ -4,7 +4,6 @@ from datetime import datetime
 from enum import Enum
 from typing import List, Optional
 
-import outlines
 from api import create_completion
 from classes import SCP, Reviewer, apply_scp_theme, reviewer_prompt, scp_prompt
 from pydantic import BaseModel, Field

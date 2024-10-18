@@ -1,3 +1,4 @@
+outlines
 pydantic
 python-dotenv
 requests
