@@ -227,8 +227,6 @@ class SCP(BaseModel):
         with open(file_path, "w") as file:
             file.write(str(self))
 
-        print(f"SCP entry saved to {file_path}")
-
 
 def scp_system_prompt(json_schema: str) -> str:
     return f"""
@@ -436,3 +434,4 @@ def redo_prompt(result: SCP, feedback: Reviewer) -> str:
     <|im_end|>
     <|im_start|>assistant
     """
+
