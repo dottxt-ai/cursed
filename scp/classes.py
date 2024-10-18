@@ -12,6 +12,108 @@ from pydantic import BaseModel, Field
 from typing import List, Optional
 from enum import Enum
 
+# This is used to guide the model to produce the correct type of SCP entry
+class EntryType(str, Enum):
+    # Sentient Entities
+    HUMAN = "Human"
+    HUMANOID = "Humanoid"
+    NON_HUMANOID_INTELLIGENT = "Non-Humanoid Intelligent"
+    ARTIFICIAL_INTELLIGENCE = "Artificial Intelligence"
+    HIVE_MIND = "Hive Mind"
+
+    # Non-Sentient Creatures
+    ANIMAL = "Animal"
+    PLANT = "Plant"
+    FUNGUS = "Fungus"
+    MICROORGANISM = "Microorganism"
+    EXTINCT_CREATURE = "Extinct or Prehistoric Creature"
+
+    # Objects
+    ARTIFACT = "Artifact"
+    TOOL = "Tool"
+    WEAPON = "Weapon"
+    MACHINERY = "Machinery"
+    ART_PIECE = "Art Piece"
+    BOOK_OR_DOCUMENT = "Book or Document"
+
+    # Locations
+    BUILDING = "Building"
+    GEOGRAPHICAL_FEATURE = "Geographical Feature"
+    ECOSYSTEM = "Ecosystem"
+    POCKET_DIMENSION = "Pocket Dimension"
+    ALTERNATE_REALITY = "Alternate Reality"
+
+    # Phenomena
+    NATURAL_PHENOMENON = "Natural Phenomenon"
+    SUPERNATURAL_OCCURRENCE = "Supernatural Occurrence"
+    PHYSICAL_LAW = "Physical Law or Constant"
+    TEMPORAL_ANOMALY = "Temporal Anomaly"
+    SPATIAL_ANOMALY = "Spatial Anomaly"
+
+    # Events
+    RECURRING_EVENT = "Recurring Event"
+    ONE_TIME_OCCURRENCE = "One-Time Occurrence"
+    RITUAL = "Ritual"
+    PROPHECY = "Prophecy"
+
+    # Concepts
+    ABSTRACT_IDEA = "Abstract Idea"
+    MEMETIC_HAZARD = "Memetic Hazard"
+    INFOHAZARD = "Infohazard"
+    COGNITOHAZARD = "Cognitohazard"
+
+    # Materials
+    SUBSTANCE = "Substance"
+    COMPOUND = "Compound"
+    ELEMENT = "Element"
+    EXOTIC_MATTER = "Exotic Matter"
+
+    # Energy Forms
+    RADIATION = "Radiation"
+    FIELD = "Field"
+    WAVE = "Wave"
+
+    # Psychological
+    MENTAL_STATE = "Mental State"
+    EMOTIONAL_CONDITION = "Emotional Condition"
+    ALTERED_PERCEPTION = "Altered Perception"
+
+    # Biological
+    DISEASE = "Disease"
+    MUTATION = "Mutation"
+    SYMBIOTE = "Symbiote"
+    PARASITE = "Parasite"
+
+    # Technological
+    ADVANCED_TECH = "Advanced Technology"
+    ANOMALOUS_SOFTWARE = "Anomalous Software"
+    REALITY_ALTERING_DEVICE = "Reality-Altering Device"
+
+    # Extradimensional
+    EXTRADIMENSIONAL_BEING = "Extradimensional Being"
+    PORTAL = "Portal"
+    OVERLAPPING_REALITY = "Overlapping Reality"
+
+    # Cosmic
+    CELESTIAL_BODY = "Celestial Body"
+    SPACE_TIME_ANOMALY = "Space-Time Anomaly"
+    UNIVERSAL_CONSTANT = "Universal Constant"
+
+    # Temporal
+    TIME_LOOP = "Time Loop"
+    ALTERNATE_TIMELINE = "Alternate Timeline"
+    PRECOGNITION_RETROCOGNITION = "Precognition/Retrocognition Effect"
+
+    # Social
+    ORGANIZATION = "Organization"
+    CULTURE = "Culture"
+    BELIEF_SYSTEM = "Belief System"
+
+    # Meta
+    SELF_REFERENTIAL = "Self-Referential SCP"
+    DOCUMENTATION_AFFECTING = "Documentation-Affecting SCP"
+    REALITY_BENDING_NARRATIVE = "Reality-Bending Narrative Element"
+
 class ObjectClass(str, Enum):
     SAFE = "Safe"
     EUCLID = "Euclid"
@@ -39,6 +141,7 @@ class Note(BaseModel):
     content: str = Field(..., description="Content of the note")
 
 class SCP(BaseModel):
+    entry_type: EntryType = Field(..., description="Type of the SCP entry")
     item_number: str = Field(..., pattern=r"^SCP-\d+$", description="Unique identifier for the SCP")
     object_class: ObjectClass = Field(..., description="Classification of the SCP's containment difficulty")
     containment_procedures: ContainmentProcedures = Field(..., description="Procedures for containing the SCP")
@@ -48,6 +151,49 @@ class SCP(BaseModel):
 
     def filepath(self, scp_dir):
         return os.path.join(scp_dir, f"{self.item_number}.txt")
+
+    def __str__(self):
+        content = f"""
+# {self.item_number}
+
+**Object Class:** {self.object_class}
+**Entry Type:** {self.entry_type}
+
+## Special Containment Procedures
+
+- **Physical Requirements:** {self.containment_procedures.physical_requirements}
+- **Security Measures:** {self.containment_procedures.security_measures}
+- **Handling Instructions:** {self.containment_procedures.handling_instructions}
+"""
+
+        if self.containment_procedures.other_precautions:
+            content += f"- **Additional Precautions:** {self.containment_procedures.other_precautions}\n"
+
+        content += "\n## Description\n\n"
+
+        if self.description.physical_appearance:
+            content += f"**Physical Appearance:** {self.description.physical_appearance}\n\n"
+
+        content += f"**Anomalous Properties:** {self.description.anomalous_properties}\n\n"
+
+        if self.description.origin:
+            content += f"**Origin:** {self.description.origin}\n\n"
+
+        if self.description.relevant_history:
+            content += f"**Relevant History:** {self.description.relevant_history}\n\n"
+
+        if self.addenda:
+            content += "## Addenda\n\n"
+            for index, addendum in enumerate(self.addenda, start=1):
+                content += f"### Addendum {self.item_number}.{index}: {addendum.title}\n\n"
+                content += f"{addendum.content}\n\n"
+
+        if self.notes:
+            content += "## Notes\n\n"
+            for note in self.notes:
+                content += f"- {note.content}\n"
+
+        return content.strip()
 
     def save(self, scp_dir):
         # Generate the file path
@@ -77,51 +223,15 @@ class SCP(BaseModel):
                         elif isinstance(item, str):
                             value[i] = item.replace(old_number, self.item_number)
 
-        # Create the SCP entry text
-        scp_text = f"# {self.item_number}\n\n"
-        scp_text += f"## Item #: {self.item_number}\n\n"
-        scp_text += f"## Object Class: [{self.object_class}]\n\n"
-
-        # Add the containment procedures
-        scp_text += "## Special Containment Procedures\n\n"
-
-        scp_text += f"{self.containment_procedures.physical_requirements}\n\n"
-        scp_text += f"{self.containment_procedures.security_measures}\n\n"
-        scp_text += f"{self.containment_procedures.handling_instructions}\n\n"
-
-        if self.containment_procedures.other_precautions:
-            scp_text += f"{self.containment_procedures.other_precautions}\n\n"
-        scp_text += "## Description:\n\n"
-        if self.description.physical_appearance:
-            scp_text += f"{self.description.physical_appearance}\n\n"
-        scp_text += f"{self.description.anomalous_properties}\n\n"
-        if self.description.origin:
-            scp_text += f"{self.description.origin}\n\n"
-        if self.description.relevant_history:
-            scp_text += f"{self.description.relevant_history}\n\n"
-        if self.addenda:
-            scp_text += "## Addendum:\n\n"
-            for index, addendum in enumerate(self.addenda, start=1):
-                scp_text += f"### Addendum {self.item_number}.{index}: {addendum.title}\n\n"
-                scp_text += f"{addendum.content}\n\n"
-        if self.notes:
-            scp_text += "## Notes:\n\n"
-            for note in self.notes:
-                scp_text += f"{note.content}\n\n"
-
         # Write the SCP entry to the file
         with open(file_path, "w") as file:
-            file.write(scp_text)
+            file.write(str(self))
 
         print(f"SCP entry saved to {file_path}")
 
 
-def scp_prompt() -> str:
-    # Make the JSON schema
-    json_schema = SCP.model_json_schema()
-
+def scp_system_prompt(json_schema: str) -> str:
     return f"""
-    <|im_start|>system
     Your role is to create SCP entries. An SCP entry is a document that
     describes an anomalous object, phenomenon, or entity, and the procedures
     and precautions that must be taken to contain it.
@@ -148,11 +258,24 @@ def scp_prompt() -> str:
     ```json
     {json_schema}
     ```
+    """
 
+def scp_user_prompt() -> str:
+    return """
+    Please produce an SCP entry.
+    """
+
+def scp_prompt() -> str:
+    # Make the JSON schema
+    json_schema = SCP.model_json_schema()
+
+    return f"""
+    <|im_start|>system
+    {scp_system_prompt(json_schema)}
     <|im_end|>
     <|im_start|>user
 
-    Please produce an SCP entry.
+    {scp_user_prompt()}
 
     <|im_end|>
     <|im_start|>assistant
@@ -254,7 +377,7 @@ class Reviewer(BaseModel):
             file.write(str(self))
 
 
-def reviewer_prompt() -> str:
+def reviewer_prompt(entry: SCP) -> str:
     json_schema = Reviewer.model_json_schema()
 
     return f"""
@@ -277,5 +400,39 @@ def reviewer_prompt() -> str:
     ```json
     {json_schema}
     ```
+    <|im_end|>
+    <|im_start|>user
+
+    Here is the SCP entry to review:
+
+    {str(entry)}
+
+    Please provide a review of the SCP entry. Be detailed and constructive.
+
+    <|im_end|>
+    <|im_start|>assistant
     """
 
+def redo_prompt(result: SCP, feedback: Reviewer) -> str:
+    scp_json_schema = SCP.model_json_schema()
+    return f"""
+    <|im_start|>system
+    {scp_system_prompt(scp_json_schema)}
+    <|im_end|>
+    <|im_start|>user
+
+    {scp_user_prompt()}
+
+    Here is the result of a previous version of the SCP entry:
+
+    {str(result)}
+
+    Here is the feedback from the previous review:
+
+    {str(feedback)}
+
+    Please review the feedback, and use it to improve the SCP entry.
+
+    <|im_end|>
+    <|im_start|>assistant
+    """
