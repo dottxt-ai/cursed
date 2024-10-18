@@ -1,0 +1,24 @@
+## Review
+
+### Initial Notes
+
+Well-structured entry, with clear headings and sections. I appreciate the addition of the Addendum which provides an example of the anomaly's effect. The entry is detailed and descriptive, and the contained document idea is interesting and unique.
+
+The initial description could benefit from additional context regarding why SCP-4977 is considered a threat and how its discovery led to the Foundation's containment. The Mandatory Security Measures section might be better placed under the 'Special Containment Procedures' heading for clarity.
+
+### Initial Review Score
+
+6
+
+### Review Reflection
+
+Positive note 1: I found several aspects of the entry that were well-written and engaging, making it clear that the author put thought into the details and presentation. Positive note 2: The use of specialized optical scanners as a security measure adds a unique and creative aspect to the entry. Negative note 1: The initial description could benefit from additional context regarding the threats posed by SCP-4977. Negative note 2: The Mandatory Security Measures section might be better placed under the 'Special Containment Procedures' heading for clarity.
+
+### Final Review Score
+
+7
+
+### Publish Decision
+
+True
+

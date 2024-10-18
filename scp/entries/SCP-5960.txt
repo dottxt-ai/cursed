@@ -1,0 +1,26 @@
+# SCP-5960
+
+**Object Class:** Euclid
+**Entry Type:** Natural Phenomenon
+
+## Special Containment Procedures
+
+- **Physical Requirements:** SCP-5960 is to be surrounded by a 2.5m tall electrified fence, with 24-hour surveillance both visually and by audio. Foundation personnel are to be stationed to prevent civilian entry or exit from the area.
+- **Security Measures:** At 17:00 hours, the power to SCP-5960 is to be entirely cut, and Foundation personnel are to maintain a 200m perimeter distance while the anomalous transformation occurs. No entities are to be allowed within the specified perimeter.
+- **Handling Instructions:** At 19:00 hours, all personnel are to employ night vision gear to monitor the transformed subjects.each individual's transformation is to be recorded, and classified based on species and behavior. Medical personnel are to be on stand by to assist in any medical emergencies resulting from the metamorphosis.
+
+## Description
+
+**Physical Appearance:** SCP-5960 is an unremarkable suburban neighborhood located in █████, 
+
+**Anomalous Properties:** The anomalous property of SCP-5960 occurs at 18:00 hours every day. During this time, the residents of the neighborhood undergo a sudden and seemingly spontaneous metamorphosis into a specific animal species. The transformations are complete and permanent, with the individuals retaining only their human intelligence.
+
+**Origin:** The origins of SCP-5960 remain unknown, but Foundation records indicate that the neighborhood was established in the 1960s. The anomalous phenomenon was first observed on ██/██/1986.
+
+**Relevant History:** Foundation agents were dispatched to SCP-5960 to investigate the phenomena. Upon arrival, the agents discovered that the residents had transformed into a diverse range of species, including birds, reptiles, and mammals.
+
+## Addenda
+
+### Addendum SCP-5960.1: Diary of Agent ████
+
+Entry 1: Today is my first day of duty at SCP-5960. It's a surreal feeling to know that I'm part of a team tasked with observing a neighborhood full of people turning into animals. It's like being in a sci-fi movie. Entry 2: Today was my first undercover operation where I had to enter the neighborhood as one of them. Not going to lie, it was fascinating to see myself transform into a raven. I felt an overwhelming sense of freedom while soaring in the sky. However, it's disconcerting to see my family and friends living this strange life every day. Entry 3: I’ve been noticing patterns in the transformations. It seems that individuals with higher stress levels tend to transform into reptiles like lizards, whereas those that are more relaxed transform into birds.
