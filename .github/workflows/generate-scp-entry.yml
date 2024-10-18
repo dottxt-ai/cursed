@@ -41,7 +41,7 @@ jobs:
       - name: Copy generated files
         run: |
           mkdir -p scp/entries
-          cp -R scp/entries/* scp/entries/
+          cp -R entries/* scp/entries/
 
       - name: Commit and push changes
         run: |
