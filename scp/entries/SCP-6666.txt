@@ -1,0 +1,19 @@
+# SCP-6666
+
+**Object Class:** Keter
+**Entry Type:** Anomalous Software
+
+## Special Containment Procedures
+
+- **Physical Requirements:** A high-security computer server with internet connectivity housed within Site-17's Data Wing.
+- **Security Measures:** The server must be shielded with Class-III antimemetic field technology to prevent unauthorized access or observation. Personnel accessing the server must undergo a pre-screening process and wear Class-A memetic-resistant hazmat suits.
+- **Handling Instructions:** The software is to be housed on a dedicated server and is only to be accessed by Level 4 personnel or higher. Personnel accessing the software are limited to a single 12-hour session per week, and all sessions are to be logged and monitored for potential security breaches or cognitive effects.
+- **Additional Precautions:** The software is to be periodically updated and backed up. In the event of a containment breach, the server is to be immediately disconnected from the internet, and an allowlist of personnel owned IP addresses is to be implemented."
+
+## Description
+
+**Physical Appearance:** N/A
+
+**Anomalous Properties:** SCP-6666 is a piece of software designed to ran on modern operating systems, presenting itself as a seemingly innocuous text application. When a user types a word into the application, the software will return a list of anagrams of that word. Upon further use, the software begins to generate increasingly complex anagrams, eventually producing phrases and sentences.
+
+**Origin:** SCP-6666 was initially discovered on a file-sharing website in 2018. Researchers traced the file to its source, which led to the discovery of a small underground organization dedicated to spreading the software through online forums and chat rooms."

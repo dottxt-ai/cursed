@@ -1,1 +1,0 @@
-{"intial_notes":[{"positive":false,"note":"The SCP entry is well-written and engaging, but lacks depth in the science behind it."}],"initial_review_score":6,"review_reflection":[{"positive":true,"note":"Revise the SCP entry to include more information about the scientific research."}],"final_review_score":7,"should_publish":true}
