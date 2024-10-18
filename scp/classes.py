@@ -6,6 +6,7 @@ part of the curse is the ugly code
 - cameron
 """
 
+from datetime import datetime
 import os
 
 from pydantic import BaseModel, Field
@@ -144,13 +145,18 @@ class SCP(BaseModel):
     entry_type: EntryType = Field(..., description="Type of the SCP entry")
     item_number: str = Field(..., pattern=r"^SCP-\d+$", description="Unique identifier for the SCP")
     object_class: ObjectClass = Field(..., description="Classification of the SCP's containment difficulty")
-    containment_procedures: ContainmentProcedures = Field(..., description="Procedures for containing the SCP")
+
+    # Putting description here because it guides the rest of the generation
     description: Description = Field(..., description="Detailed description of the SCP")
+    containment_procedures: ContainmentProcedures = Field(..., description="Procedures for containing the SCP")
     addenda: List[Addendum] = Field(default_factory=list, description="Additional information about the SCP")
     notes: List[Note] = Field(default_factory=list, description="Miscellaneous notes about the SCP")
 
     def filepath(self, scp_dir):
         return os.path.join(scp_dir, f"{self.item_number}.txt")
+
+    def html_filepath(self, scp_dir):
+        return os.path.join(scp_dir, f"{self.item_number}.html")
 
     def __str__(self):
         content = f"""
@@ -227,6 +233,113 @@ class SCP(BaseModel):
         with open(file_path, "w") as file:
             file.write(str(self))
 
+    def to_html(self):
+        content = f"""
+        <h1>{self.item_number}</h1>
+        <p><strong>Object Class:</strong> {self.object_class}</p>
+        <p><strong>Entry Type:</strong> {self.entry_type}</p>
+
+        <h2>Special Containment Procedures</h2>
+        <ul>
+            <li><strong>Physical Requirements:</strong> {self.containment_procedures.physical_requirements}</li>
+            <li><strong>Security Measures:</strong> {self.containment_procedures.security_measures}</li>
+            <li><strong>Handling Instructions:</strong> {self.containment_procedures.handling_instructions}</li>
+        """
+
+        if self.containment_procedures.other_precautions:
+            content += f"<li><strong>Additional Precautions:</strong> {self.containment_procedures.other_precautions}</li>"
+
+        content += "</ul>"
+
+        content += "<h2>Description</h2>"
+
+        if self.description.physical_appearance:
+            content += f"<p><strong>Physical Appearance:</strong> {self.description.physical_appearance}</p>"
+
+        content += f"<p><strong>Anomalous Properties:</strong> {self.description.anomalous_properties}</p>"
+
+        if self.description.origin:
+            content += f"<p><strong>Origin:</strong> {self.description.origin}</p>"
+
+        if self.description.relevant_history:
+            content += f"<p><strong>Relevant History:</strong> {self.description.relevant_history}</p>"
+
+        if self.addenda:
+            content += "<h2>Addenda</h2>"
+            for index, addendum in enumerate(self.addenda, start=1):
+                content += f"<h3>Addendum {self.item_number}.{index}: {addendum.title}</h3>"
+                content += f"<p>{addendum.content}</p>"
+
+        if self.notes:
+            content += "<h2>Notes</h2><ul>"
+            for note in self.notes:
+                content += f"<li>{note.content}</li>"
+            content += "</ul>"
+
+        return apply_scp_theme(content)
+
+
+def apply_scp_theme(content):
+    return f"""
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SCP Foundation - {content.split('<h1>')[1].split('</h1>')[0]}</title>
+        <style>
+            body {{
+                font-family: 'Arial', sans-serif;
+                line-height: 1.6;
+                color: #333;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f4f4f4;
+            }}
+            .container {{
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }}
+            h1, h2, h3 {{
+                color: #990000;
+            }}
+            h1 {{
+                text-align: center;
+                border-bottom: 2px solid #990000;
+                padding-bottom: 10px;
+            }}
+            ul {{
+                list-style-type: none;
+                padding-left: 0;
+            }}
+            li {{
+                margin-bottom: 10px;
+                padding: 10px;
+                background-color: #f9f9f9;
+                border-left: 3px solid #990000;
+            }}
+            .footer {{
+                text-align: center;
+                margin-top: 20px;
+                font-style: italic;
+                color: #666;
+            }}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            {content}
+        </div>
+        <div class="footer">
+            <p>SCP Foundation &#8226; Secure, Contain, Protect</p>
+            <p>Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</p>
+        </div>
+    </body>
+    </html>
+    """
 
 def scp_system_prompt(json_schema: str) -> str:
     return f"""
@@ -237,12 +350,16 @@ def scp_system_prompt(json_schema: str) -> str:
     You must provide
 
     - An SCP number in the format SCP-[number]
-    - The object class of the SCP, which is one of the following: Safe, Euclid, Keter, or Thaumiel
+    - The object class of the SCP, which is one of the following: Safe, Euclid, Keter, or Thaumiel.
+        - Safe: The SCP is relatively harmless and does not pose a significant risk to the SCP Foundation or its personnel.
+        - Euclid: The SCP is moderately dangerous and requires careful containment measures.
+        - Keter: The SCP is highly dangerous and requires strict containment measures.
+        - Thaumiel: The SCP is so dangerous that it cannot be contained and must be destroyed.
+    - The description of the SCP, including its physical appearance, anomalous properties,
+      origin, and relevant history. This should be the longest section of your SCP entry.
     - The special containment procedures for the SCP. Be detailed and specific. A reader of this
       SCP entry should be able to contain the SCP without any ambiguity. SCP entities may be dangerous
       or require special handling, and so the containment procedures are of the utmost importance.
-    - The description of the SCP, including its physical appearance, anomalous properties,
-      origin, and relevant history.
     - Any addenda to the SCP, which are additional documents that provide more information about the SCP.
       Addenda are optional, but can help provide more context about the SCP and its anomalies. Addenda
       typically come in the form of documents, logs, or other records that provide more information about
@@ -251,11 +368,8 @@ def scp_system_prompt(json_schema: str) -> str:
       about the SCP that is not covered elsewhere. Notes can be used to provide speculation, theorizing,
       or other information that is relevant to the SCP.
 
-    You must provide all the above fields in valid JSON. Your schema is:
+    Your description should be long and detailed. This is your time to let your creativity shine.
 
-    ```json
-    {json_schema}
-    ```
     """
 
 def scp_user_prompt() -> str:
