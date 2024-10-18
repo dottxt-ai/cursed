@@ -1,0 +1,22 @@
+## Review
+
+### Initial Notes
+
+The idea of the SCP is intriguing, but the execution seems to be lacking. The description feels rough and could use a better flow. Additionally, it feels like it is lacking in details about how the SCP actually functions in Foundation operations.
+
+### Initial Review Score
+
+4
+
+### Review Reflection
+
+It would be beneficial to provide a smoother and more engaging flow to the description. The writer should also provide more detail about how the SCP interacts with Foundation operations. This could include examples of what the SCP has done, or examples of incidents that have happened involving the SCP.
+
+### Final Review Score
+
+6
+
+### Publish Decision
+
+True
+

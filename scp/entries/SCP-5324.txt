@@ -1,0 +1,38 @@
+# SCP-5324
+
+## Item #: SCP-5324
+
+## Object Class: [Safe]
+
+## Special Containment Procedures
+
+Storage in a standard anomaly containment locker within a Site-00 research wing.
+
+Access restricted to Level 1 Clearance personnel only.
+
+Objects are to be handled with kid gloves due to their delicate nature.
+
+## Description:
+
+SCP-001 takes the form of a set of ten ordinary-looking playing cards, each depicting a unique individual within Foundation history.
+
+When played according to the instructions provided, the player will be taken to an alternate reality where they are able to interact with the people depicted on the cards.
+
+SCP-001 was discovered by Foundation personnel in 1923 at an antique shop in New York City.
+
+Though SCP-001 was initially construed as a mere collector's item, testing revealed its anomalous properties. It has been used several times to contact historical figures for purposes of research and diplomacy. All instances where individuals have entered this reality through SCP-001 have returned without harm.
+
+## Addendum:
+
+### Addendum SCP-5324.1: Addendum 001: Successful Testing Day
+
+Tested on 07/14/1925 by Dr. Richard Alcardo. Dr. Alcardo successfully entered the alternate reality and was able to engage in conversation with three historical figures for a total duration of 12 hours. He has not yet been able to leave the alternate reality, causing a panic which was quickly resolved, leading to the discovery of the additional rule that, 'Every card must be played in a complete game and returned to the player before another may be chosen to return to alternate reality.'
+
+### Addendum SCP-5324.2: Addendum 002: Diplomatic Mission
+
+On 04/19/1934, SCP-5324 was used for the purpose of diplomacy with the historical figure, George Washington. The mission was a success and knowledge was obtained regarding conspiracies to assassinate Washington.
+
+## Notes:
+
+It is theorized that the alternate reality resembles a combination of recorded history and the subject's imagination, but further research is needed to confirm this hypothesis.
+

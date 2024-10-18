@@ -1,0 +1,36 @@
+# SCP-263
+
+## Item #: SCP-263
+
+## Object Class: [Euclid]
+
+## Special Containment Procedures
+
+SCP-263 is housed within a hermetically-sealed 2.5 m x 2.5 m x 2.5 m enclosure constructed of non-conductive, non-corrosive materials. The enclosure is to be kept in a standard humanoid containment cell.
+
+The enclosure is to be monitored by video surveillance 24 hours a day, with live feeds accessed by authorized personnel only.
+
+Personnel handling SCP-263 are required to wear full-body Hazmat suits level A, equipped with a positive pressure respirator with HEPA filter.
+
+Authorized personnel are to inform Security team of any unusual behavior detected by the surveillance system.
+
+## Description:
+
+SCP-263 appears as a humanoid figure approximately 2 meters tall with an androgynous appearance. Its skin is a metallic silver color, without any visible pores, hair, or orifices. SCP-263 has a single, large, crescent-shaped eye in the center of its chest, which appears to be the only functioning sensory organ. It possesses a pair of skin flaps which extend from its shoulders to its waist, reminiscent of wings, but lacking any apparent musculature. SCP-263 lacks discernible genitalia.
+
+When SCP-263's eye makes visual contact with a person, the person will immediately lose all bodily function and enter a state of suspended animation. The person will remain in this state indefinitely, only returning to normal upon SCP-263's eye losing sight of the affected individual. The victim's body remains functional and resilient while in the suspended state, allowing them to survive otherwise fatal situations.
+
+The object was discovered in 1985, amid a bunch of undelivered packages, sent from an unknown facility to a now defunct courier company in Berlin, Germany.
+
+SCP-263's containment was breached on 25/02/1998. The incident resulted in 4 casualties. The Foundation liaised with local authorities and downplayed the event as a biological hazard incident. After an extensive search, SCP-263 was recovered and containment procedures were tightened.
+
+## Addendum:
+
+### Addendum SCP-263.1: Addendum 263-1
+
+During a test in which researchers approached SCP-263 to within 10 meters, the metal of SCP-263's body spontaneously emitted a loud high-pitched noise, causing all non-Hazmat personnel within 20 meters to suffer temporary hearing loss.
+
+## Notes:
+
+It is currently unknown how the absence of bodily functions in affected individuals can prevent fatal situations while maintaining otherwise normal functionality.
+
