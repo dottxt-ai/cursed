@@ -1,0 +1,30 @@
+# SCP-640
+
+**Object Class:** Euclid
+**Entry Type:** Humanoid
+
+## Special Containment Procedures
+
+- **Physical Requirements:** SCP-640 is to be contained within a standard humanoid containment cell,\" SCp-640\" is an anomalous humanoid capable of assuming any shape or form it desires. the containment cell must be soundproofed and fitted with a security system that alerts personnel of any attempts at escaping. a single D-class personnel is to be assigned to SCP-640 as a subject for experiments. personnel must use voice modulation and disguise appliances while interacting with SCP-640 to maintain its belief of its own perceived reality.
+- **Security Measures:** Access to SCP-640 is restricted to Level 4 personnel and above. All interactions with SCP-640 are to be recorded and documented in the SCP-640 Log.
+- **Handling Instructions:** During experiments, personnel must reinforce the false reality created by SCP-640 and reinforce the perception that they are participants in the scenario. Disruptions to SCP-640's perceived reality may result in violent outbursts and potential escape attempts.
+
+## Description
+
+**Physical Appearance:** SCP-640 appears to be a humanoid figure, standing approximately 1.8 meters tall. It has a featureless, gray skin, and no distinguishing features. SCP-640 is capable of assuming any shape or form it desires.
+
+**Anomalous Properties:** SCP-640 is capable of manipulating the perception of any human subject within a 3-meter radius of itself. It creates a false reality for the subject, making them perceive the surroundings, objects and other individuals as part of a scenario, effectively creating an idyllic life for the subject. The illusion can be maintained indefinitely as long as SCP-640 believes the subject is fully immersed in the scenario. If the illusion is broken or SCP-640 loses faith in the subject's immersion, the subject will immediately regenerate to a healthy state and remember their prior life, resulting in potential violence towards SCP-640 due to the trauma of the sudden return.
+
+**Origin:** SCP-640 was discovered in ████, [redacted], where it had been terrorizing a local community. It was apprehended by foundation personnel after a failed attempt by local law enforcement to apprehend it.
+
+**Relevant History:** After containment, SCP-640 was subjected to multiple attempts to understand and exploit its anomalous properties for propaganda and mind control purposes.
+
+## Addenda
+
+### Addendum SCP-640.1: SCP-640 Log
+
+3/25/2021 : SCP-640 was assigned a new D-class personnel, D-9428. The scenario produced by SCP-640 was a dystopian future where D-9428 was a resistance fighter against an oppressive regime. The scenario was successfully maintained for seven days, after which SCP-640 believed that D-9428 had effectively contributed to the resistance cause and reverted the scenario. D-9428 was returned to their original timeline.
+
+## Notes
+
+- It was hypothesized that SCP-640's ability to create a false reality is related to its perception of the subject's desire for a specific scenario. Confirmation of this hypothesis may lead to a method to exploit or neutralize its anomalous effect.

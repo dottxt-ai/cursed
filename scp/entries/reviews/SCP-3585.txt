@@ -1,0 +1,24 @@
+## Review
+
+### Initial Notes
+
+The SCP entry has an clear structure, with good organization of sections. The entry contains all required components of an SCP entry such as Object Class, Special Containment Procedures, Description and Addenda.
+
+The Entry could use more detail in the Description section, specifically regarding the anomalous properties of SCP-3585. Theanner of SCP-3585'sPrile Appearance could be clarified for better reader understanding. Also, it would be helpful to have more information about the fractal food and how it interacts with SCP-3585.
+
+### Initial Review Score
+
+6
+
+### Review Reflection
+
+Your notes highlighted the need for additional detail, particularly in the areas you identified. It's clear that your feedback is focused on areas that would enhance the existing entry, rather than suggesting major revisions.
+
+### Final Review Score
+
+7
+
+### Publish Decision
+
+True
+

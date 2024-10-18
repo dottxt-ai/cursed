@@ -1,0 +1,24 @@
+## Review
+
+### Initial Notes
+
+The SCP entry has a clear and concise summary, consisting of Object Class, Entry Type, special containment procedures, security measures, and handling instructions. The description of the anomaly, origin and relevant history is well-written
+
+The description could benefit from more specifics on the D-class subjects and their experiences within the created scenario, to provide a more comprehensive understanding of SCP-640's capabilities and limitations.
+
+### Initial Review Score
+
+6
+
+### Review Reflection
+
+The entry could provide more depth and clarity in describing the D-class subjects' experiences. It would be helpful to include additional Addenda to further detail the effects and its maintenance procedures, and to expand on attempts to understand its anomalous properties.
+
+### Final Review Score
+
+7
+
+### Publish Decision
+
+True
+

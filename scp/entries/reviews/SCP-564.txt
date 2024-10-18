@@ -1,0 +1,22 @@
+## Review
+
+### Initial Notes
+
+The SCP-564 entry mostly follows the basic structure required for an SCP entry. The entry contains a clear description of the object, its physical appearance, anomaly, origins, and relevant history. It includes special containment procedures, handling instructions, and also adds two addenda for incidents. However, the entry could use some improvements in certain areas.
+
+### Initial Review Score
+
+6
+
+### Review Reflection
+
+For the initial review, I'd suggest making a few improvements. First, it would be great to have a more detailed and vivid description of SCP-564, focusing on textures and colors to make it more engaging. Second, the special containment procedures can be improved by explicitly stating why lead is used for lining, and how the security measures work in practice. Finally, the entry could benefit from a clear outline, making it easier to scan and navigate for readers.
+
+### Final Review Score
+
+7
+
+### Publish Decision
+
+True
+

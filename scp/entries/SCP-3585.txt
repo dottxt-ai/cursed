@@ -1,0 +1,30 @@
+# SCP-3585
+
+**Object Class:** Euclid
+**Entry Type:** Humanoid
+
+## Special Containment Procedures
+
+- **Physical Requirements:** SCP-3585 is to be housed in a containment chamber designed to replicate the internal environment and structure of the Fractal Facility. This chamber is to include a number of anomalous artifacts discovered within SCP-3585's residence.
+- **Security Measures:** Access to SCP-3585's containment chamber is to be restricted to Level 4 Personnel with clearance from Site Directors.
+- **Handling Instructions:** Personnel interacting with SCP-3585 must wear protective equipment including standard anti-memetic glasses, auditory protection, and an electronic restraint system.
+
+## Description
+
+**Physical Appearance:** SCP-3585 appears to be a humanoid entity measuring roughly 2.1m in height. The entity has a vaguely reptilian appearance with a green, scaled skin. It wears a form-fitting suit made of an unknown material. Its head appears to be smaller than that of a typical humanoid, and its eyes are large and almond-shaped, with vertical slits serving as pupils.
+
+**Anomalous Properties:** SCP-3585 is capable of causing the affected individuals to experience vivid illusions and false memories when exposed to certain stimuli. This effect appears to be related to the consumption of a form of 'fractal food' discovered within the Fractal Facility.
+
+**Origin:** The Fractal Facility's existence was discovered during an excavation expedition in South America. The facility, which bore no external marks or signs, housed instances of various anomalous objects and entities, including SCP-3585.
+
+**Relevant History:** SCP-3585 was located by Foundation personnel during the containment of the Fractal Facility in 1993. Since its containment, SCP-3585 has not displayed any anomalous behavior in addition to its memory manipulation effect.
+
+## Addenda
+
+### Addendum SCP-3585.1: Addendum 3585-1
+
+Personnel who have been exposed to SCP-3585's anomalous effects describe the illusions as being distressingly real and vivid. One researcher reported forgetting his own name and family for several hours after a brief encounter with SCP-3585.
+
+## Notes
+
+- It is theorized that the severity and persistence of the illusions and memories caused by SCP-3585 are related to the individual's pre-existing mental state and susceptibility to suggestion and manipulation.
