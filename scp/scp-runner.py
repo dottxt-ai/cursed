@@ -7,7 +7,7 @@ import os
 from datetime import datetime
 
 from api import create_completion
-from classes import SCP, Reviewer, reviewer_prompt, scp_prompt
+from classes import SCP, Reviewer, redo_prompt, reviewer_prompt, scp_prompt
 
 # Where the entries are stored
 scp_dir = "entries"
@@ -30,7 +30,7 @@ entry.save(scp_dir)
 print(f"Entry saved to {entry.filepath(scp_dir)}")
 
 # Review it
-review = create_completion(Reviewer, reviewer_prompt())
+review = create_completion(Reviewer, reviewer_prompt(entry))
 
 # Save it to disk
 review_path = os.path.join(review_dir, f"{entry.item_number}.txt")
@@ -40,6 +40,7 @@ print(f"Review saved to {review_path}")
 # Generate an index.html file
 index_file = os.path.join(scp_dir, "index.html")
 entries = [f for f in os.listdir(scp_dir) if f.endswith(".txt")]
+entry_names = [f.replace(".txt", "") for f in entries]
 
 html_content = f"""
 <!DOCTYPE html>
@@ -61,7 +62,7 @@ html_content = f"""
     <h1>SCP Entries Index</h1>
     <p>Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</p>
     <ul>
-        {"".join(f'<li><a href="{entry}">{entry[:-5]}</a></li>' for entry in sorted(entries))}
+        {"".join(f'<li><a href="{entry}">{entry_name}</a></li>' for entry_name, entry in sorted(zip(entry_names, entries), key=lambda x: x[0]))}
     </ul>
 </body>
 </html>
