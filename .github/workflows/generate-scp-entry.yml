@@ -20,13 +20,13 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r scp/requirements.txt
 
       - name: Run SCP generator
-        run: python scp-runner.py
+        run: python scp/scp-runner.py
         env:
           DOTTXT_API_KEY: ${{ secrets.DOTTXT_API_KEY }}
-          DOTTXT_HOST: ${{ secrets.DOTTXT_HOST }}
+          DOTTXT_API_HOST: ${{ secrets.DOTTXT_API_HOST }}
 
       - name: Configure Git
         run: |
@@ -41,7 +41,7 @@ jobs:
       - name: Copy generated files
         run: |
           mkdir -p scp/entries
-          cp -R entries/* scp/entries/
+          cp -R scp/entries/* scp/entries/
 
       - name: Commit and push changes
         run: |
