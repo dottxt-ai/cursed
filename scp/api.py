@@ -71,6 +71,8 @@ def get_schema_by_name(name: str, api_key: Optional[str] = None) -> Optional[dic
                 return schema
         return None
     except HTTPError as e:
+        # Display the response body
+        print(e.response.text)
         if e.response.status_code == 403:
             raise ValueError("Authentication failed. Please check your API key.") from e
         else:
@@ -91,6 +93,8 @@ def create_schema(schema: str, name: str, api_key: Optional[str] = None) -> dict
         response.raise_for_status()
         return response.json()
     except HTTPError as e:
+        # Display the response body
+        print(e.response.text)
         if e.response.status_code == 403:
             raise ValueError("Authentication failed. Please check your API key.") from e
         else:
