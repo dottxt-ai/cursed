@@ -7,20 +7,19 @@ import os
 from datetime import datetime
 
 from api import create_completion
-from classes import SCP, Reviewer, redo_prompt, reviewer_prompt, scp_prompt
+from classes import SCP, Reviewer, reviewer_prompt, scp_prompt
 
 # Where the entries are stored
 scp_dir = "entries"
 review_dir = "entries/reviews"
 
 # Check if entries and reviews folders exist
-if not os.path.exists(scp_dir):
-    # Make it
-    os.makedirs(scp_dir)
+dirs = [scp_dir, review_dir]
+for dir in dirs:
+    if not os.path.exists(dir):
+        # Make it
+        os.makedirs(dir)
 
-if not os.path.exists(review_dir):
-    # Make it
-    os.makedirs(review_dir)
 
 # Call the api
 entry = create_completion(SCP, scp_prompt())
