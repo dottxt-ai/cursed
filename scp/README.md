@@ -6,6 +6,7 @@ This Python script generates SCP (Secure, Contain, Protect) entries and saves th
 Special thanks to [all the contributors](https://scp-wiki.wikidot.com/authors-pages) of the SCP wiki over the years! This would never be possible without the creativity, passion, and dedication of the SCP community.
 
 ## Features
+
 - Supports various SCP object classes: Safe, Euclid, Keter, Thaumiel, and more can be added as needed.
 - Generates SCP entries with the following sections:
   - Item Number
@@ -57,11 +58,14 @@ print(f"Entry saved to {entry.filepath()}")
 This will generate a new SCP entry, save it to the `entries` directory, and print the file path.
 
 ## Customization
-You can customize the script by:
 
+You can customize the SCP generator by editing the `classes.py` file.
+
+- `scp_prompt()` can be modified to change the prompt for the SCP generator.
 - Adding new `ObjectClass` values as needed.
 - Modifying the `ContainmentProcedures`, `Description`, `Addendum`, and `Note` models to fit your desired SCP entry structure.
 - Adjusting the text generation and formatting in the `save()` method of the `SCP` model.
 
 ## Contributing
+
 If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.

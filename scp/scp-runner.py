@@ -7,6 +7,7 @@ from enum import Enum
 import json
 import os
 
+from api import create_completion
 from classes import SCP, scp_prompt
 
 # Where the entries are stored
@@ -17,17 +18,9 @@ if not os.path.exists(scp_dir):
     # Make it
     os.makedirs(scp_dir)
 
+# Call the api
+entry = create_completion(SCP, scp_prompt())
 
-# Using outlines locally
-model = outlines.models.transformers(
-    "microsoft/Phi-3-mini-128k-instruct",
-    device="cpu"
-)
-
-# Make the generator
-scp_generator = outlines.generate.json(model, SCP)
-
-# Make a new one
-entry = scp_generator(scp_prompt())
+# Save it to disk
 entry.save(scp_dir)
 print(f"Entry saved to {entry.filepath(scp_dir)}")
