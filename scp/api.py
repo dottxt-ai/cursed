@@ -1,17 +1,38 @@
+"""
+ _______________________________
+/ Don't want to self-host?       \
+\\ Try .json at http://dottxt.co /
+ -------------------------------
+       \\   ^__^
+        \\  (oo)\\_______
+            (__)\\       )\\/\
+                ||----w |
+                ||     ||
+
+This code generate one SCP entry a day using the .txt API, .json.
+
+The code is runnable without an API key, but may be useful when
+the .json service is more widely available.
+
+To run this code locally, please run `scp.py` instead.
+"""
+
 import hashlib
 import json
 import os
 import time
+from typing import Optional
+
 import requests
 from dotenv import load_dotenv
-from typing import Optional
 from requests.exceptions import HTTPError
 
 load_dotenv(override=True)
 
 # Create schema-to-js_id mapping
-API_HOST = os.environ.get("DOTTXT_API_HOST", "api.dottxt.co")
+API_HOST = os.environ.get("DOTTXT_API_HOST", None)
 API_KEY = os.environ.get("DOTTXT_API_KEY", None)
+
 
 def check_api_key() -> None:
     if not API_KEY:
@@ -23,7 +44,9 @@ def get_headers(api_key: Optional[str] = None) -> dict:
         api_key = API_KEY
     return {"Authorization": f"Bearer {api_key}"}
 
+
 SCHEMA_HASH_TO_COMPLETION_URL = {}
+
 
 def to_hash(pydantic_class):
     schema = pydantic_class.model_json_schema()
