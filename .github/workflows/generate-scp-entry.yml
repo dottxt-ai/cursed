@@ -2,8 +2,8 @@ name: Generate SCP Entry
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Run daily at midnight UTC
-  workflow_dispatch:  # Allow manual trigger
+    - cron: "0 0 * * *" # Run daily at midnight UTC
+  workflow_dispatch: # Allow manual trigger
 
 jobs:
   generate-and-deploy:
@@ -15,7 +15,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.10'
+          python-version: "3.10"
 
       - name: Install dependencies
         run: |
@@ -45,6 +45,6 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git add scp/entries
+          git add -f scp/entries
           git commit -m "Add new SCP entry" || echo "No changes to commit"
           git push origin gh-pages
