@@ -36,8 +36,8 @@ jobs:
 
       - name: Create and switch to gh-pages branch
         run: |
-          git checkout -b gh-pages
-          git pull origin gh-pages || true
+          git fetch origin gh-pages
+          git checkout -B gh-pages origin/gh-pages
 
       - name: Copy generated files
         run: |
