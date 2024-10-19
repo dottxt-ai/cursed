@@ -151,7 +151,11 @@ def create_completion(
     data = {"prompt": prompt, "max_tokens": max_tokens}
     headers = get_headers(api_key)
     completion_response = requests.post(completion_url, headers=headers, json=data)
-    completion_response.raise_for_status()
+
+    if completion_response.status_code != 200:
+        # Show the response body
+        print(completion_response.text)
+        raise ValueError(f"Completion request failed with status code {completion_response.status_code}")
 
     # get json
     completion_response_json = completion_response.json()
