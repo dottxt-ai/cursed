@@ -1,0 +1,27 @@
+# SCP-974
+
+**Object Class:** Euclid
+**Entry Type:** Celestial Body
+
+## Special Containment Procedures
+
+- **Physical Requirements:** All observation and monitoring of SCP-974 must be conducted remotely, via satellites orbiting at a safe distance. Any attempt to physically interact with the object must be approved by Level 4 personnel and executed with extreme caution. All personnel involved must wear appropriate radiation shielding due to the unknown material composition of SCP-974.
+- **Security Measures:** Access to information regarding SCP-974 is restricted to Level 2 clearance or higher. Any unauthorized attempts to approach, observe, or interfere with SCP-974's trajectory are to be met with standard counter-measures.
+- **Handling Instructions:** In the event that SCP-974's anomalous properties pose a direct threat to Earth, a containment breach protocol known as 'Omega-Nebula' is to be activated. This protocol involves the coordinated firing of kinetic impactors to alter the trajectory of SCP-974 in a way that neutralizes its gravitational anomaly.
+- **Additional Precautions:** Due to the unpredictable behavior of objects in proximity to SCP-974's gravitational anomaly, all vessels and spacecraft within a 5,000 km radius must maintain regular contact with Foundation astrophysicists for navigation support and potential evacuation procedures. In the event of a containment breach, the relative position and orbital path of SCP-974 will need to be determined immediately to facilitate a quick response.
+
+## Description
+
+**Physical Appearance:** SCP-974 appears to be a natural, irregularly shaped asteroid measuring approximately 4.5 kilometers in its longest dimension. The surface of SCP-974 is composed of an unknown substance that exhibits a high degree of structural integrity, with energy readings that are comparable to a solidified plasma.
+
+**Anomalous Properties:** The anomalous nature of SCP-974 manifests as a gravitational anomaly. SCP-974's gravity effectively extracts gravitons from its vicinity, creating a localized frame of reference that is independent of the larger gravitational field of the Solar System. This gravity 'hole' causes objects in close proximity to SCP-974 to behave unpredictably, as if affected by gravitational fluctuations. Additionally, SCP-974 exhibits advanced mobility, occasionally altering its position in a seemingly random pattern.
+
+**Origin:** SCP-974 was first observed in 2013 when a team of astronomers detected a large, irregularly shaped object in an unusual orbital path. Further investigation revealed the anomalous properties described above.
+
+**Relevant History:** The Foundation initially designated SCP-974 as a potential threat to Earth's orbital stability. As such, the object was classified as Euclid and placed under containment.
+
+## Addenda
+
+### Addendum SCP-974.1: Addendum 974-a: Unusual Orbital Event
+
+On 03/17/2017, SCP-974 experienced an abrupt change in trajectory that resulted in it passing within 250 kilometers of Earth's atmosphere. This event caused significant disruptions to global satellite communications and led to a temporary shift in Earth's rotational axis. Post-event analysis revealed no discernible impact on the object, and SCP-974 continued to exhibit its normal random mobility pattern.
