@@ -37,12 +37,13 @@ else:
         f.write(html_content)
     print(f"HTML saved to {html_path}")
 
-    # Review it
-    review = create_completion(Reviewer, reviewer_prompt(entry))
+    # # Review it
+    # # note: this is disabled for now, until context length is increased
+    # review = create_completion(Reviewer, reviewer_prompt(entry))
 
-    # Save it to disk
-    review_path = os.path.join(review_dir, f"{entry.item_number}.txt")
-    review.save(review_path)
-    print(f"Review saved to {review_path}")
+    # # Save it to disk
+    # review_path = os.path.join(review_dir, f"{entry.item_number}.txt")
+    # review.save(review_path)
+    # print(f"Review saved to {review_path}")
 
 print("SCP entry generation complete.")
