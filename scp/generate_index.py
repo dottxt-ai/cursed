@@ -66,7 +66,7 @@ def generate_index():
         <div class="container">
             <h1>SCP Foundation Archives</h1>
             <ul>
-                {"".join(f'<li><a href="{entry}">{entry_name}</a></li>' for entry_name, entry in sorted(zip(entry_names, entries), key=lambda x: x[0]))}
+                {''.join(f'<li><a href="{entry}">{entry_name}</a></li>' for entry_name, entry in sorted(zip(entry_names, entries), key=lambda x: x[0]))}
             </ul>
             <p class="update-info">Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</p>
         </div>
