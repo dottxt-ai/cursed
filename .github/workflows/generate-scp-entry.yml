@@ -29,6 +29,9 @@ jobs:
           DOTTXT_API_KEY: ${{ secrets.DOTTXT_API_KEY }}
           DOTTXT_API_HOST: ${{ secrets.DOTTXT_API_HOST }}
 
+      - name: Generate index
+        run: python scp/generate_index.py
+
       - name: Configure Git
         run: |
           git config user.name github-actions[bot]
@@ -43,9 +46,6 @@ jobs:
         run: |
           mkdir -p scp/entries
           cp -R entries/* scp/entries/
-
-      - name: Generate index
-        run: python scp/generate_index.py
 
       - name: Commit and push changes
         run: |
