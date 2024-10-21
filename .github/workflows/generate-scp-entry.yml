@@ -37,19 +37,20 @@ jobs:
       - name: Create and switch to gh-pages branch
         run: |
           git fetch origin gh-pages
+          # copy the generator script to a local directory
+          cp scp/generate_index.py .
           git checkout -B gh-pages origin/gh-pages
 
       - name: Copy generated files and index generator
         run: |
           mkdir -p scp/entries
           cp -R entries/* scp/entries/
-          cp scp/generate_index.py scp/
 
       - name: Generate index
-        run: python scp/generate_index.py
+        run: python generate_index.py
 
       - name: Commit and push changes
         run: |
-          git add -f scp/entries scp/index.html  # Add index.html if it's generated
+          git add -f scp/entries scp/index.html
           git commit -m "Add new SCP entry and update index" || echo "No changes to commit"
           git push origin gh-pages || git pull --rebase origin gh-pages && git push origin gh-pages
