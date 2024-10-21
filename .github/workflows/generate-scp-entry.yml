@@ -47,7 +47,9 @@ jobs:
           cp -R entries/* scp/entries/
 
       - name: Generate index
-        run: python generate_index.py
+        run: |
+          cp generate_index.py scp/
+          python scp/generate_index.py
 
       - name: Commit and push changes
         run: |
