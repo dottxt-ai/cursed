@@ -1,0 +1,26 @@
+# SCP-4688
+
+**Object Class:** Safe
+**Entry Type:** Documentation-Affecting SCP
+
+## Special Containment Procedures
+
+- **Physical Requirements:** SCP-4688 is contained within a locked B-class storage safe in Storage Locker 35 at Site-87. The contents of the safe are to be checked daily by a level 2 Personnel.
+- **Security Measures:** SCP-4688 is not to be allowed to fall into the hands of the general public. Any incident where SCP-4688 is misplaced or potentially stolen, Level 4 Security personnel are are to be notified immediately and begin a site-wide search.
+- **Handling Instructions:** SCP-4688 is to be handled only by Level-2 security personnel or above. Physical interaction with SCP-4688 must be carefully monitored to avoid potential consequences of SCP's anomalous properties.
+
+## Description
+
+**Physical Appearance:** SCP-4688 appears as an old-fashioned brass hourglass with hourglass-shaped base, containing a total of approximately 430ml of sand. The sand appears to be of two distinct types, one half colored a deep, rich cinnamon while the opposite half is a vibrant Caribbean seafoam.  The hourglass bears no obvious means of identifiable origin or markings outside a faint circular etching on the base of the hourglass.
+
+**Anomalous Properties:** Whenever the finer sand (seafoam) falls out of the hourglass, it does so from the bottom, replacing the coarser cinnamon sand up to the previous amount of the seafoam sand that fell. To the observer, it appears that the hourglass tells the time in reverse.
+
+## Addenda
+
+### Addendum SCP-4688.1: Recovered Document 4688-A
+
+Date: November 16th, 1941\
+
+## Notes
+
+- The effects of the SCP product mistakenly being sold in a local auction could have been a 'nightmare' for the town in which the Site-87 is located. The potential chaos had the seafoam sand run backwards time was averted due to the swift action of the Foundation security. This justifies the containment protocol that requires constant monitoring of the hourglass's whereabouts.
