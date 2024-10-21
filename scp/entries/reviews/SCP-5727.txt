@@ -1,0 +1,26 @@
+## Review
+
+### Initial Notes
+
+The SCP entry has a clear, concise structure and provides all necessary information in a comprehensive manner.
+
+The entry includes a detailed description of the SCP's anomalous properties and its origin, as well as the negative consequences that users may experience from interacting with it.
+
+Additionally, the entry outlines specific containment procedures and security measures that are both comprehensible and well-thought-out.
+
+### Initial Review Score
+
+7
+
+### Review Reflection
+
+The review should focus on providing specific feedback to improve upon the already well-written entry, rather than considering drastic changes or rewrites.
+
+### Final Review Score
+
+7
+
+### Publish Decision
+
+True
+

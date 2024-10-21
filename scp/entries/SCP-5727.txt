@@ -1,0 +1,21 @@
+# SCP-5727
+
+**Object Class:** Keter
+**Entry Type:** Anomalous Software
+
+## Special Containment Procedures
+
+- **Physical Requirements:** SCP-5727 is to be stored on Foundation-issued thumb drives or internal storage devices. These are to be openly obtained from Foundation-approved suppliers. No physical or digital copies of the software are to be kept on Foundation computers.
+- **Security Measures:** Access to SCP-5727 is restricted to Level-4 personnel and above. Only personally-owned non-Windows devices such as smartphones or tablets are permitted to interact with the SCP. The usage of the SCP is only permitted for experimentation purposes and requires clear pre-approval from the ethics committee.
+- **Handling Instructions:** If a user exhibits signs of distress during an active session, the SCP must be immediately deactivated. Foundation-approved anti-anxiety medications may be administered to a user during or after a session, if necessary.
+- **Additional Precautions:** Executing the SCP-5727 program on any Windows-based computer system or allowed on the Foundation network is strictly prohibited. Regular containment integrity checks are to be performed on all Level-4 and above personnel to monitor their exposure to SCP-5727 or any similar anomalous items.
+
+## Description
+
+**Physical Appearance:** SCP-5727 appears as a seemingly innocuous file labeled 'EndlessStressReliever.exe' when contained on a Windows computer. Upon execution, the program exhibits a minimalistic user interface with a grey 'Activate' button.
+
+**Anomalous Properties:** Upon activation, SCP-5727 fully immerses the user in a virtual reality simulation wherein they are presented with a seemingly innocuous task, such as folding laundry or organizing a desk. The task itself appears to be mind-numbingly mundane and repetitive. However, time within the simulation seems to dilate exponentially based on the user's stress levels. Results indicate that users exhibiting high stress levels during activation may experience periods of time within the simulation lasting from weeks to years, even while the passage of real-time measures in mere minutes. The user is unable to exit the simulation unless the program is forcefully terminated or deactivated.
+
+**Origin:** SCP-5727 was discovered following a series of anomalous events traced back to employees of multiple Fortune 500 companies. Interviews revealed that victims had been unknowingly using the software at their workplace, leading Foundation personnel to track down the source of the anomalous software.
+
+**Relevant History:** Among the individuals who had been using SCP-5727, some had been visibly aged, showing gray hair and wrinkles despite not being of advanced age. Some had even passed away due to the apparent acceleration of aging caused by the virtual reality simulation, with the longest recorded span being approximately 7 real-time months, during which the user aged 43 years.
