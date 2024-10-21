@@ -1,0 +1,34 @@
+# SCP-6342
+
+**Object Class:** Thaumiel
+**Entry Type:** Universal Constant
+
+## Special Containment Procedures
+
+- **Physical Requirements:** SCP-6342 is stored in a standard containment locker at Site-17. Access to SCP-6342 is granted only to Level 4 personnel with explicit approval from the Site Director. 
+- **Security Measures:** The watch is encased in a bulletproof glass container and secured with an electronic lock. The room in which SCP-6342 is stored is monitored constantly by security cameras and is equipped with air- Filtration systems to prevent any accidental activation.
+- **Handling Instructions:** When handling SCP-6342, personnel must never set the watch to a specific time, as any accidental activation could result in catastrophic consequences. Personnel must wear protective eyewear when undertaking maintenance on the electronic lock, to protect against potential radiation leaks.
+
+## Description
+
+**Physical Appearance:** SCP-6342 appears to be a standard issue pocket watch, made of brass and measuring approximately 5 cm in diameter. Upon close examination, the watch's faces appear distorted, and the hands are twisted into unrecognizable shapes. No brand or maker's mark is visible on the watch.
+
+**Anomalous Properties:** When the watch is wound and set to a specific time, it will cause the users of all objects within a 50-meter radius to experience an intense<|im_start|><|im_start|> assistant
+
+**Origin:** SCP-6342 was discovered in 1968 in Paris, France, during a routine surveillance operation by Foundation agents. A man, later identified as Dr. Jacques Leroux, an ex-employee of the French Ministry of Culture, was observed giving the watch to a group of protestors prior to a scheduled government demonstration.
+
+**Relevant History:** The Foundation apprehended Dr. Leroux and recovered SCP-6342. Interrogation revealed that Dr. Leroux had purchased the watch from a street vendor in Prague in 1957. Dr. Leroux claimed that he had used the watch twice in the past, once in 1959 during a strike at a French automobile manufacturing plant, and again in 1965 during the Algerian War of Independence to manipulate the outcomes of events. Each time, the watch had been effective in causing widespread chaos and disruption.
+
+## Addenda
+
+### Addendum SCP-6342.1: Experimental Logs
+
+To date, 32 experimental tests have been carried out with SCP-6342. In all instances, the watches' anomalous effects have proven to be consistent and predictable. Due to the destabilizing nature of SCP-6342's effects, it is recommended that no further experiments be conducted with the object.
+
+### Addendum SCP-6342.2: Personnel Incidents
+
+D-2017, a Foundation personnel, accidently wound SCP-6342 while opening a storage drawer it was contained in. The resulting effect led to a 14-day period of civil unrest across Buenos Aires. D-2017 was terminated following the incident, and the organizations involved in the unrest were covertly debriefed and neutralized by Foundation operatives.
+
+## Notes
+
+- SCP-6342 is to be considered a Thaumiel-class object, due to its potential to cause widespread havoc. While its effects can be controlled when utilized strategically, the consequences of accidental activation are too severe to risk any experimentation with the object.
