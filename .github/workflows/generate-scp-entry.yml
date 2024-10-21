@@ -29,9 +29,6 @@ jobs:
           DOTTXT_API_KEY: ${{ secrets.DOTTXT_API_KEY }}
           DOTTXT_API_HOST: ${{ secrets.DOTTXT_API_HOST }}
 
-      - name: Generate index
-        run: python scp/generate_index.py
-
       - name: Configure Git
         run: |
           git config user.name github-actions[bot]
@@ -42,13 +39,17 @@ jobs:
           git fetch origin gh-pages
           git checkout -B gh-pages origin/gh-pages
 
-      - name: Copy generated files
+      - name: Copy generated files and index generator
         run: |
           mkdir -p scp/entries
           cp -R entries/* scp/entries/
+          cp scp/generate_index.py scp/
+
+      - name: Generate index
+        run: python scp/generate_index.py
 
       - name: Commit and push changes
         run: |
-          git add -f scp/entries
+          git add -f scp/entries scp/index.html  # Add index.html if it's generated
           git commit -m "Add new SCP entry and update index" || echo "No changes to commit"
           git push origin gh-pages || git pull --rebase origin gh-pages && git push origin gh-pages
