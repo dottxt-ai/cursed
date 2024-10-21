@@ -19,25 +19,30 @@ for dir in dirs:
         # Make it
         os.makedirs(dir)
 
-
 # Call the api
 entry = create_completion(SCP, scp_prompt())
 
-# Save it to disk
-entry.save(scp_dir)
-print(f"Entry saved to {entry.filepath(scp_dir)}")
+# Check if the entry already exists
+if os.path.exists(entry.filepath(scp_dir)) or os.path.exists(entry.html_filepath(scp_dir)):
+    print(f"Entry {entry.item_number} already exists. Skipping.")
+else:
+    # Save it to disk
+    entry.save(scp_dir)
+    print(f"Entry saved to {entry.filepath(scp_dir)}")
 
-# Save the entry to HTML
-html_content = entry.to_html()
-html_path = entry.html_filepath(scp_dir)
-with open(html_path, "w") as f:
-    f.write(html_content)
-print(f"HTML saved to {html_path}")
+    # Save the entry to HTML
+    html_content = entry.to_html()
+    html_path = entry.html_filepath(scp_dir)
+    with open(html_path, "w") as f:
+        f.write(html_content)
+    print(f"HTML saved to {html_path}")
 
-# Review it
-review = create_completion(Reviewer, reviewer_prompt(entry))
+    # Review it
+    review = create_completion(Reviewer, reviewer_prompt(entry))
 
-# Save it to disk
-review_path = os.path.join(review_dir, f"{entry.item_number}.txt")
-review.save(review_path)
-print(f"Review saved to {review_path}")
+    # Save it to disk
+    review_path = os.path.join(review_dir, f"{entry.item_number}.txt")
+    review.save(review_path)
+    print(f"Review saved to {review_path}")
+
+print("SCP entry generation complete.")
