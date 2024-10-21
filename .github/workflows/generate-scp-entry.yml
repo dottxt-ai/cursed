@@ -49,7 +49,8 @@ jobs:
       - name: Generate index
         run: |
           cp generate_index.py scp/
-          python scp/generate_index.py
+          cd scp/
+          python generate_index.py
 
       - name: Commit and push changes
         run: |
