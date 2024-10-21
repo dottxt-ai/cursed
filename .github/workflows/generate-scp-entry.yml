@@ -36,16 +36,19 @@ jobs:
 
       - name: Create and switch to gh-pages branch
         run: |
-          git fetch origin gh-pages
-          git checkout -B gh-pages origin/gh-pages
+          git checkout -b gh-pages
+          git pull origin gh-pages || true
 
       - name: Copy generated files
         run: |
           mkdir -p scp/entries
           cp -R entries/* scp/entries/
 
+      - name: Generate index
+        run: python scp/generate_index.py
+
       - name: Commit and push changes
         run: |
           git add -f scp/entries
-          git commit -m "Add new SCP entry" || echo "No changes to commit"
+          git commit -m "Add new SCP entry and update index" || echo "No changes to commit"
           git push origin gh-pages
