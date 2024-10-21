@@ -13,7 +13,7 @@
 
 **Physical Appearance:** SCP-6342 appears to be a standard issue pocket watch, made of brass and measuring approximately 5 cm in diameter. Upon close examination, the watch's faces appear distorted, and the hands are twisted into unrecognizable shapes. No brand or maker's mark is visible on the watch.
 
-**Anomalous Properties:** When the watch is wound and set to a specific time, it will cause the users of all objects within a 50-meter radius to experience an intense<|im_start|><|im_start|> assistant
+**Anomalous Properties:** When the watch is wound and set to a specific time, it will cause the users of all objects within a 50-meter radius to experience an intense desire to rebel against the established order.
 
 **Origin:** SCP-6342 was discovered in 1968 in Paris, France, during a routine surveillance operation by Foundation agents. A man, later identified as Dr. Jacques Leroux, an ex-employee of the French Ministry of Culture, was observed giving the watch to a group of protestors prior to a scheduled government demonstration.
 

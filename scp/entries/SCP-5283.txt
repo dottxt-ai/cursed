@@ -5,7 +5,7 @@
 
 ## Special Containment Procedures
 
-- **Physical Requirements:** Document A and all replicated instances of SCP-5283 must be stored on a dedicated server within a<|im_start|><|im_start|> assistanticular containment chamber. Access to the server is restricted to Level 3 personnel with proper clearance. Regular system scans must be performed to ensure no instances of SCP-5283 have managed to escape the server.
+- **Physical Requirements:** Document A and all replicated instances of SCP-5283 must be stored on a dedicated server within a particular containment chamber. Access to the server is restricted to Level 3 personnel with proper clearance. Regular system scans must be performed to ensure no instances of SCP-5283 have managed to escape the server.
 - **Security Measures:** Personnel are required to use dedicated, secure workstations when working with SCP-5283. Any digital devices brought into the containment area must be scanned for the presence of SCP-5283 prior to entry and after exit. Any device found to be contaminated with SCP-5283 must be isolated and wiped immediately.
 - **Handling Instructions:** When handling SCP-5283, personnel must exercise extreme care and avoid typing any words or phrases that could be considered dangerous or sensitive. Personnel must not use Document A for any personal use, and must report any instances of SCP-5283-induced notifications or pop-ups immediately.
 - **Additional Precautions:** Due to the potential for SCP-5283 to be weaponized, personnel must avoid using Document A to type messages or notifications that could be perceived as hostile or targeted. All outgoing communications from the Foundation's network are to be monitored for any signs of SCP-5283-induced text.
