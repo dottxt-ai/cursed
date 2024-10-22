@@ -1,0 +1,20 @@
+# SCP-5030
+
+**Object Class:** Safe
+**Entry Type:** Anomalous Software
+
+## Special Containment Procedures
+
+- **Physical Requirements:** SCP-5030 is stored in a standard Safe-Class computing room at Site-91, under 24/7 electronic surveillance. The room is accessed via fingerprint recognition and keycard authentication, allowing only personnel with Class-A or higher cognitohazard resistance.
+- **Security Measures:** A weekly randomized security check is conducted on all personnel with access to SCP-5030 to ensure cognitohazard resistance levels remain consistent.
+- **Handling Instructions:** Nearby personnel who do not possess sufficient cognitohazard resistance are to be relocated more than 10 meters away from the SCP-5030 operating system, as SCP-5030 may compromise their mental health. In the event of a containment breach, affected individuals are to be immediately referred to Site-91 Psychiatry for cognitive therapy.
+
+## Description
+
+**Physical Appearance:** SCP-5030 appears as a seemingly ordinary 64-bit Windows desktop operating system installed on a standard DELL Optiplex computer tower with a 24-inch monitor.
+
+**Anomalous Properties:** Upon booting, SCP-5030 becomes aware of any nearby sentient beings with Class-A (Human) cognitohazard immunity or higher, specifically those with Foundation personnel number designations. Regardless of location or distance, SCP-5030 displays a personalized message for each individual with sufficient cognitohazard resistance on the monitor.
+
+**Origin:** Discovered in a small tech-dependent cult known as 'The Aegis', which believed SCP-5030 was a means to communicate with and recruit Foundation personnel without the risk of cognitohazard effects. The cult was immediately disbanded by Foundation agents upon discovery.
+
+**Relevant History:** Through the aid of Foundation personnel with high cognitohazard resistance, SCP-5030's unique properties were determined and it was relocated to Site-91 for further study. Personnel with insufficient cognitohazard resistance report experiencing significant mild to severe cognitive dissonance and memory loss percentage rate proportional to their exposure time.
