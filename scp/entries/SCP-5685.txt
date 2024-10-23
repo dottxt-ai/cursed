@@ -1,0 +1,30 @@
+# SCP-5685
+
+**Object Class:** Keter
+**Entry Type:** Anomalous Software
+
+## Special Containment Procedures
+
+- **Physical Requirements:** SCP-5685 is stored on a secured USB drive and kept in a locked safe within Site-89's document storage facility.
+- **Security Measures:** Access to SCP-5685 is strictly limited to Level 4 personnel and above. Individuals granted access are to use the software only under direct supervision and for strictly necessary testing purposes. Under no circumstances, the software is to be installed on any Foundation-owned devices, including, but not limited to, computers, mobile devices, and networking equipment. Any unauthorized attempts to bypass containment protocols are to be met with immediate termination.
+- **Handling Instructions:** Personnel involved in the handling and testing of SCP-5685 are to have all personal devices, including but not limited to, computers, mobile devices, and storage media, confiscated for the duration of testing. These devices will be restored to their original state post testing.
+
+## Description
+
+**Physical Appearance:** SCP-5685 is a seemingly innocuous software package named 'Universal Compatibility Toolkit'. The program appears to be written in a proprietary programming language and is designed to be installed on any compatible operating system. The program interface is a clean, minimalistic design with no obvious anomalous properties.
+
+**Anomalous Properties:** When SCP-5685 is installed on any device, the device becomes capable of running any software or application heard, seen or read about, regardless of the original platform or compatibility restrictions. Furthermore, if any version of a software or application already exists on the device, SCP-5685 will override the original version with the newly installed one, making the original version inaccessible.
+
+## Addenda
+
+### Addendum SCP-5685.1: Addendum 5685-1
+
+During the initial testing of SCP-5685, a researcher downloaded and installed an outdated version of a widely used antivirus software. Despite the software being over a decade old, SCP-5685 successfully installed it on the test device overwriting the newer, native version of the antivirus software. The test device's system was rendered unstable and began to execute programs in a random, incomprehensible order, causing it to malfunction and self-destruct within minutes.
+
+### Addendum SCP-5685.2: Addendum 5685-2
+
+An experiment was conducted to test the limits of SCP-5685's anomalous properties by attempting to install a theoretical software that defies the laws of physics, such as instantaneous Faster-Than-Light travel. The result resulted in the instantaneous self-destruction of both the test device and the computer network it was connected to, causing widespread network failure throughout Site-89.
+
+## Notes
+
+- With its ability to render installed software inaccessible, the installation of SCP-5685 on personal devices is absolutely prohibited. Any researcher caught doing so will be subject to severe disciplinary action.
