@@ -5,6 +5,8 @@ This Python script generates SCP (Secure, Contain, Protect) entries and saves th
 
 Special thanks to [all the contributors](https://scp-wiki.wikidot.com/authors-pages) of the SCP wiki over the years! This would never be possible without the creativity, passion, and dedication of the SCP community.
 
+Entries are automatically generated at midnight and [uploaded to a website](https://dottxt-ai.github.io/cursed/scp/entries/).
+
 ## Features
 
 - Supports various SCP object classes: Safe, Euclid, Keter, Thaumiel, and more can be added as needed.
