@@ -1,0 +1,26 @@
+# SCP-3336
+
+**Object Class:** Euclid
+**Entry Type:** Anomalous Software
+
+## Special Containment Procedures
+
+- **Physical Requirements:** SCP-3336 instances are to be stored on digital storage media within a locked, reinforced safe in Storage Locker-12. Physical access to Storage Locker-12 is restricted to personnel with Level 3 clearance or higher. Electronic access to SCP-3336 instances is restricted to personnel with Level 2 clearance or higher. Electronic copies of SCP-3336 instances are to be stored within a remote server located within Site-17's computer system.
+- **Security Measures:** Personnel are not to interact with SCP-3336 without express permission from a Level 4 or higher personnel. In the event of SCP-3336 exposure or unauthorized access, all personnel are to be administered Class-A amnestics and debriefed on the nature of SCP-3336
+- **Handling Instructions:** If SCP-3336 must be accessed for research purposes, a single instance is to be extracted and loaded into a dedicated computer within a monitoring room. Camera and microphone blocks are to be used while interacting with the software. All interaction is to be recorded and reported to the on-site supervisor. The monitoring session is limited to 60 minutes and may only be extended under special circumstances and permission from a Level 4 or higher personnel.
+
+## Description
+
+**Physical Appearance:** SCP-3336 is an instance of anomalous software detected and contained on various storage media.
+
+**Anomalous Properties:** SCP-3336 manifests as seemingly benign video game software. When initiated, SCP-3336 becomes a fully-functional, open-world 'sandbox' game environment populated by humanoid NPCs representing former Foundation personnel who went missing or were terminated. These NPCs display anomalous cognitive elements, including implanted false memories and motivation to fulfill specific tasks. While the game runs, the user is unaware of the passage of time and remains completely absorbed in the game. If the user attempts to exit the game, SCP-3336 will initiate a forced system shutdown. Removal of the software from storage media and use of digital wiping methods are ineffective to erase it, as SCP-3336 will 'reproduce' itself from leftover digital artifacts.
+
+## Addenda
+
+### Addendum SCP-3336.1: Recovered Items
+
+During the initial containment of SCP-3336, numerous digital records were recovered detailing the identity of the NPCs present within the software, along with the cause of their disappearance or termination. Additionally, interviews with surviving personnel reveal SCP-3336 was created as a 'safe space' for grieving coworkers to confront their past, but soon spiraled out of control leading to its dissemination outside the Foundation. All recovered records are to be kept in a limited access database accessible only to personnel with Level 4 clearance or higher.
+
+## Notes
+
+- Since containment, multiple instances of SCP-3336 have appeared on Foundation computers. After containment, an atypical number of absences and unexplained behavior has been noted among Level 2 clearance personnel. Personnel familiarity with missing colleagues may inadvertently trigger SCP-3336's cognitive anomaly.
