@@ -34,7 +34,7 @@ with these.
 
 ## Examples of cursed language model code
 
-- [worldsim](https://worldsim.nousresearch.com/) is a great example of cursed code. It lets you explore a world that doesn't exist in a way that invites constant curiousity. Amazing work by the Nous team.
+- [worldsim](https://worldsim.nousresearch.com/) is a great example of cursed code. It lets you explore a world that doesn't exist in a way that invites constant curiosity. Amazing work by the Nous team.
 - [Python.jl](https://pretalx.com/juliacon2024/talk/ZH3JN3/) in the Julia world overrode the Julia REPL to attempt to evaluate python expressions before Julia ones, which made this hideous (but cool) python + julia nightmare blend. It also surprisingly works very well.
 - [this rust code](https://github.com/loyston500/cursed-codes/blob/main/rust/hello.rs) is gross as hell
 - [rockstar](https://codewithrockstar.com/) is an esoteric programming language where you write code in the form of hair metal power ballads
