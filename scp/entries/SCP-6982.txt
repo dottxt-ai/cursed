@@ -1,0 +1,30 @@
+# SCP-6982
+
+**Object Class:** Euclid
+**Entry Type:** Anomalous Software
+
+## Special Containment Procedures
+
+- **Physical Requirements:** SCP-6982 is to be stored on a secure, air-gapped laptop dedicated to the SCP. The laptop's internet connection is to be disabled and the laptop is to be kept in a containment cell equipped with a radiocommunication receiver to allow for potential communication with infected individuals.
+- **Security Measures:** All personnel interacting with SCP-6982 must undergo data sanitization procedures and wear contact lenses with data-scrubbing electrodes. This ensures that any visual exposure to encrypted data is immediately replaced with sanitized image data.
+- **Handling Instructions:** Access to SCP-6982 is limited to Level 4 personnel with clearance. Researchers that require data from encrypted files are to request a decryption task from the head of Site-68, who will vet the necessity of the decryption
+
+## Description
+
+**Physical Appearance:** SCP-6982 is a software program designed for Microsoft Windows operating systems, resembling an operating system's file-encryption utility. The program is written in C++ and occupies approximately 3 GB when fully installed. The initial version of SCP-6982 appears as a folder named 'Data Protection System' in the user's Program Files folder.
+
+**Anomalous Properties:** When SCP-6982 is activated and run, it claims to encrypt the user's data files and documents. However, the encrypted files cannot be decrypted through any known means.
+
+## Addenda
+
+### Addendum SCP-6982.1: Initial Acquisition
+
+SCP-6982 was discovered in 2019 after several anonymous reports of seemingly irreversible data loss due to SCP-6982 situations. The software was discovered to be in circulation on several underground markets on the Dark Web.
+
+### Addendum SCP-6982.2: Experiment Log 6982-1
+
+[Excerpts from the file log] Researcher Thompson initiated an experiment to test the capabilities and effects of SCP-6982. After running SCP-6982 on a test folder, all files within the folder were found encrypted. These files have remained encrypted despite all documented encryption-decryption methods.
+
+## Notes
+
+- Recent interrogations of individuals affected by SCP-6982 reveal that they feel an intense fixation towards SCP-6982, often resorting to desperate measures to re-access their encrypted data. This psychological effect is under further investigation.
