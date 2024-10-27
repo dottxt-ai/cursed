@@ -1,0 +1,32 @@
+# SCP-682
+
+**Object Class:** Keter
+**Entry Type:** Prophecy
+
+## Special Containment Procedures
+
+- **Physical Requirements:** SCP-682 is to be contained within a high-security, climate-controlled facility designed to house it. The facility is to be built into a large, uninhabited pit filled with white-hot lava, with the floor of the facility situated just above the lava's surface. This ensures that SCP-682 cannot escape by simply walking away and manages its primary weakness. The walls and ceiling of the containment chamber are to be constructed of solid basalt, as it is resistant to the extreme heat of SCP-682's regenerative abilities. The room is to be equipped with a complex series of doors, each made of a different material, as a safeguard against SCP-682's hyper-adaptive abilities. These doors include steel-reinforced blast doors, electrified doors, and air-lock similar doors that involve high pressure water jets. Each door is to be secured by a unique combination lock, controlled by a minimum of 3 personnel. The facilities themselves are to be located in remote regions of the Australian Outback, far from any populated areas, and maintained at a constant temperature of approximately 20°C (68°F). Access to the facility is restricted to authorized Level 4 staff members only, and all personnel are to be equipped with personal protective equipment, including blast-resistant waistcoats, helmets, and goggles.},"procedure_explanation": 
+- **Security Measures:** Security surrounding SCP-682 is to be of the highest priority. The routine inspection and maintenance of all security systems and personnel is to be conducted daily. In the event that SCP-682 initiates a breach of containment,** **special escape procedures are in effect. Incremental teams of Level 4 or higher staff members are to descend to the lower portions of the facility, sealing both the chamber door and the access door to the facility itself. Following this, staff members are to strike SCP-682 with a 30kg (66 lbs) titanium and tungsten alloy bat, which has been designed to pierce SCP-682's skin and rupture its internal organs. The bat should be dropped from a height, hitting SCP-682 from above as it tries to exit. This procedure will cause enough damage to buy time for emergency personnel to reach the location from a nearby mobile command center and re-secure SCP-682 using the unique door combination. In the event of sustained breaches of containment or prolonged hostilities between SCP-682 and security personnel, SCP-682 is to be terminated by any means necessary. S surviving genetic material is to be analyzed to determine if any potential medical or bio-engineering applications exist.
+- **Handling Instructions:** Personnel interacting with SCP-682 should do so wearing personal protective equipment. Any testing is to be conducted by Level 4 staff or higher, and should focus on understanding and further exploiting its regeneration and hyper-adaptive abilities for potential bio-engineering or medical applications, as well as investigating its alien properties. Testing should be done with strict controls and safety measures to avoid any potential escape or harm to personnel. Any attempt to subdue or kill SCP-682 during testing is prohibited.
+
+## Description
+
+**Physical Appearance:** SCP-682 is a large, bipedal reptilian creature, approximately 5 meters in height, with a scarred and scaly greenish-black skin that develops in response to damage. Its body is heavily muscular and its features are generally reptilian, with a large head, small eyes, sharp teeth, and short, powerful limbs. SCP-682 has a distinct odor described as a combination of sulfur and rotting meat.},"anomalous_properties": 
+
+**Anomalous Properties:** SCP-682 possesses several anomalous properties that make it highly dangerous. It is extremely resilient, able to regenerate any damage sustained nearly instantly, including limb loss and organ damage. Its regeneration ability is only affected by extremes of temperature, specifically absolute zero and white-hot lava. SCP-682 is immune to traditional means of termination and capturing, such as firearms, otherwise lethal toxins, electrifying devices, and physical restraints. It is also hyper-adaptive, able to evolve and develop new abilities in response to threats and environments. Additionally, SCP-682 is highly mobile, able to move at high speeds and leap great distances, despite its size and massive weight. It is also capable of surviving in extreme environments such as extreme cold or heat.","origin": 
+
+**Origin:** SCP-682's origin is uncertain and shrouded in mystery. Some Foundation researchers speculate that it may be a surviving remnant of the Mesozoic era, having gone into stasis during the Cretaceous–Paleogene extinction event and awoken much later. However, this is thus far unverified. It was initially discovered after several incidences of missing and murdered cattle in rural Australia. When Foundation personnel investigated, they discovered SCP-682 attacking a herd of cattle and apprehended it.
+
+## Addenda
+
+### Addendum SCP-682.1: Addendum 682-1: —
+
+SCP-682 has proven highly resistant to typical methods of containment and destruction. In addition to its extreme resilience, its hyper-adaptive abilities allow it to rapidly evolve defenses against attempted terminations. Due to the risk of SCP-682 breaching containment and causing untold harm or destruction, it has been designated as a Keter-class SCP.
+
+### Addendum SCP-682.2: Addendum 682-2
+
+On 01/01/19██, SCP-682 managed to breach its containment. It was successfully recontained due to rapid response by security personnel and utilization of unique door combination. It was also discovered that SCP-682 had developed a new ability - the ability to shoot fire from its mouth. After a series of tests, it was found that due to the intense heat of the lava it was contained in, SCP-682's natural evolution seemed to be towards fiery abilities. containment procedures were thus adjusted. It was also found that SCP-682 has strange, prehistoric DNA, which scientists are researching for potential uses in genetic engineering.
+
+### Addendum SCP-682.3: Addendum 682-3
+
+On 15/06/1993, SCP-682 overpowered a team of security personnel and escaped containment in a surprise breach. It was contained again after several hours, but not before it had killed ██ Site personnel and ██ civilians.
