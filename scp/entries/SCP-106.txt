@@ -1,0 +1,28 @@
+# SCP-106
+
+**Object Class:** Euclid
+**Entry Type:** Book or Document
+
+## Special Containment Procedures
+
+- **Physical Requirements:** SCP-106 is to be stored in a standard Safe-class containment locker when not in use. Two security personnel, equipped with non-metallic weapons and<|im_start|> assistant protective gear, are to be stationed outside SCP-106's containment locker at all times.
+- **Security Measures:** Access to SCP-106 is restricted to Level 2 security personnel and above. Any individual who wishes to interact with SCP-106 must first receive explicit permission from a Level 3 personnel. All interactions with SCP-106 are to be logged and monitored.
+- **Handling Instructions:** When interacting with SCP-106, personnel are to attempt to open the lock less than three times. If SCP-106 becomes active, personnel are to evacuate the area immediately and await the deactivation of SCP-106. Upon deactivation, the on-duty security personnel are to be notified and will reestablish security measures around SCP-106.
+
+## Description
+
+**Physical Appearance:** SCP-106 appears to be a rusted iron safe, bearing a manufacturer's mark indicating it was made in the year 1875. The safe is 1.2 meters in height, 0.8 meters in width, and 0.6 meters in depth. It has a combination lock on the front face, but the combination is unknown and the lock is non-standard.
+
+**Anomalous Properties:** When three consecutive attempts are made to open the lock on SCP-106, it will become active and attempt to harm any human being within 3 meters. It does so by manifesting a spectral, armored knight that wields a short sword made of the same iron as SCP-106. The knight is hostile and will attempt to kill the intruder. If the intruder successfully evades or kills the knight, SCP-106 will deactivate until a further three consecutive attempts are made on the lock. 
+
+**Origin:** SCP-106 was discovered in a London antique store in 1925 when a curious individual opened the safe three times in a row out of suspicion that it was a dummy safe. The first time, nothing happened. But upon the third attempt, the spectral armored knight manifested and attacked the individual, causing panic in the shop. Foundation agents were alerted to the incident and swiftly apprehended the knight, recording its actions, and relocated SCP-106 to a secure containment site.
+
+## Addenda
+
+### Addendum SCP-106.1: Attempt-Counter-Resetting Experiment
+
+On ██/██/1988, D-995 was instructed to attempt to open SCP-106's lock until the manifestation of the spectral knight. Upon the knight's manifestation, D-995 was to reset the lock's attempt counter to zero and report the success time. D-995 successfully completed the task in 7 minutes and 34 seconds, confirming that resetting the attempt counter does indeed deactivate SCP-106. D-995 was terminated post-experimentation.
+
+## Notes
+
+- Examination of SCP-106's interior reveals nothing of significance. The interior of the safe is empty, save for a small amount of soot covering the bottom, suggesting a history of attempted opens.
