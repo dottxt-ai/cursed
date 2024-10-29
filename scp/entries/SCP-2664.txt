@@ -1,0 +1,20 @@
+# SCP-2664
+
+**Object Class:** Safe
+**Entry Type:** Anomalous Software
+
+## Special Containment Procedures
+
+- **Physical Requirements:** The Formation Team are to carry out the required procedures with Safe containment Listeners in attendance. A foundation sector commander should also be present. For transport and inspection, it should be carried on a Room Transport Vehicle (RTV). Personnel should also be able to evacuate the chamber by using the Hallway Expedition Vehicle (HEV).
+- **Security Measures:** Staff should ensure that all personnel have the appropriate training and certifications.
+- **Handling Instructions:** Staff should be aware of the anomalous properties of the system before handling. Security is to ensure that everyone within earshot is managed smoothly and there are usually no issues here. No anomalies are known so far. Business procedures excluding incursions should be followed according to standard procedure by all personnel exposed to the possible anomalies.
+
+## Description
+
+**Physical Appearance:** It appears as a nine storey building made entirely out of straight lines. The building stands tall and appears shifted at an angle in comparison to the opposite edges. It is located on the western hemisphere of Earth and the highest room is currently level 67. It can be accessed through a private security door located at the twentieth floor of a cozy country cottage located in Essex, England. Each storey is at most nine meters high, aside from the thirty-ninth storey; it has a shaft bisecting it that runs all the way through to the safety of the garage, where the vehicle is shut away. Incident ID: 19676281-09/25/2021 (Scouting Team █████)
+
+**Anomalous Properties:** The SCP located in the basement workshop level 27 is currently being designed to assemble with minimal human intervention and lack of human resources with the aid of Ascension and Project Dreamcatcher. Blueprints for this machine will be delivered to station via logistical cargo available for any researchers.
+
+**Origin:** The foundation visited the site in 1965 as part of a regular scouting project after a report surfaced regarding strange disappearances in the area. The entire area once belonged to a formerly contested hole in space-time it could spell disaster to the very fabric of the multiverse ,used fairly recently as a repair station for a small aircraft.
+
+**Relevant History:** The Foundation has known about for quite some time. Before the urbanisation in this part of the British Isles in 1956, the team tasked with scouting the area found a bizarre anomaly guarded by a powerful ancient technology. The Husk.
