@@ -1,0 +1,22 @@
+# SCP-2051
+
+**Object Class:** Safe
+**Entry Type:** Precognition/Retrocognition Effect
+
+## Special Containment Procedures
+
+- **Physical Requirements:** SCP-2051 must be contained in a standard bathroom mirror.
+- **Security Measures:** Strict security measures must be taken to ensure that the mirrors' surfaces cannot be disturbed or altered. Any attempts to do so should be met with extreme caution.
+- **Handling Instructions:** Agents may use SCP-2051 for experimentation, but only under the guidance of a senior researcher. All experiments must be documented and kept on file.
+
+## Description
+
+**Anomalous Properties:** SCP-2051 is the anomalous ability to see and hear future events by gazing into the reflection of a standard bathroom mirror.
+
+**Origin:** SCP-2051 was discovered in the bathroom of the SCP Foundation's site-19.
+
+**Relevant History:** Many Foundation agents have experimented with SCP-2051, but none have been able to determine the exact time or date in which future events will occur.
+
+## Notes
+
+- SCP-2051 has the ability to see and hear future events in hindsight. However, it is only able to hear the events from the past 24 hours and see the events that have occurred in the last year. This ability does not allow SCP-2051 to change these events, but instead allows it to observe them with perfect clarity.
