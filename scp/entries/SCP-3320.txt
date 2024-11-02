@@ -1,0 +1,30 @@
+# SCP-3320
+
+**Object Class:** Euclid
+**Entry Type:** Symbiote
+
+## Special Containment Procedures
+
+- **Physical Requirements:** SCP-3320 is contained in a glass jar, which is contained in a steel secure containment chamber. Access to the jar is granted only to Level 4 personnel.
+- **Security Measures:** The containment chamber is equipped with an automated security system, which triggers a vaporization sequence if the security heartbeat is interrupted or an unauthorized access attempt is made. The vaporization sequence uses electrolysis to disrupt any unstable elements in the SCP's gelatinous mass.
+- **Handling Instructions:** SCP-3320 must be handled with gloves and a face shield, to prevent the absorption of any organic materials by the SCP.
+
+## Description
+
+**Physical Appearance:** SCP-3320 is a spherical mass of a gelatinous, viscous fluid. It exhibits a metallic sheen and a bluish hue under ultraviolet light. The mass is 7.4 centimeters in diameter and weighs 112 grams.
+
+**Anomalous Properties:** The fluid is highly adhesive and absorbs any material that comes into contact with it. It is capable of entering living or dead tissue, creating a symbiotic relationship with the organism through cellular attachment. The symbiosis is mutualistic, with the host providing nutrients and oxygen to the fluid, and the fluid providing protection and metabolism of nutrients to the host.
+
+**Origin:** Unknown. It was discovered in a secret underground laboratory in Chicago, Illinois, in 2012. No research has been done on the origin of SCP-3320.
+
+**Relevant History:** SCP-3320 was discovered during an investigation into an illegal biological research facility. The facility was abandoned and had been destroyed, with only a single jar containing the SCP left behind. The jar had been sealed with an unknown substance, which prevented the fluid from escaping. Investigation by the Foundation has revealed no evidence or traces of the other contents of the laboratory.
+
+## Addenda
+
+### Addendum SCP-3320.1: Addendum 3320-1: Analysis of SCP-3320's Properties
+
+Analysis of SCP-3320's properties has revealed that it is a synthetic substance created through an unknown chemical process. Microscopic analysis reveals a complex structure of small nanoparticles that are arranged in a crystalline lattice. Analysis of the lattice itself has revealed that it is composed of a unique form of silicon-72, which has never been found in nature and is believed to be man-made. The crystalline lattice is electrically conductive and has the ability to transfer electrons, potentially explaining the SCP's ability to absorb organic materials. Analysis of the STAGE I distribution center reports also show that it has been used for more than 25 years in the form of conventional light bulbs, but the current one was found to be an extremely weak version after lending earlier, which led to its discovery. Network security staff brought the computer to review SCP-3320's damage log, but rather than losing data, they found an apparently unique managerial database for Organizational Operations.
+
+## Notes
+
+- - There are rumors that the SCP may have originated from the same laboratory that produced SCP-1555, a humanoid entity with organic wings. There are no known links between the two entities.
