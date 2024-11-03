@@ -1,0 +1,35 @@
+# SCP-4012
+
+**Object Class:** Euclid
+**Entry Type:** Symbiote
+
+## Special Containment Procedures
+
+- **Physical Requirements:** physical_requirements of the containment
+- **Security Measures:** security_measures of the containment
+- **Handling Instructions:** handling_instructions of the containment
+
+## Description
+
+**Physical Appearance:** the physical appearance of your SCP
+
+**Anomalous Properties:** describe the anomalies of your SCP
+
+**Origin:** origin of your SCP
+
+**Relevant History:** relevant_history of your SCP
+
+## Addenda
+
+### Addendum SCP-4012.1: Title 1
+
+Content 1
+
+### Addendum SCP-4012.2: Title 2
+
+Content 2
+
+## Notes
+
+- Note 1
+- Note 2
