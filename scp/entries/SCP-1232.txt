@@ -1,0 +1,20 @@
+# SCP-1232
+
+**Object Class:** Safe
+**Entry Type:** Spatial Anomaly
+
+## Special Containment Procedures
+
+- **Physical Requirements:** 
+- **Security Measures:**  Access to SCP-1232 is restricted to Foundation personnel only. The object is housed in a secure location, and all access to it is monitored. Any unauthorized attempts to access SCP-1232 are to be immediately reported and investigated.
+- **Handling Instructions:**  Personnel handling SCP-1232 must wear protective clothing and gear at all times. Gloves and goggles are required, as the surface of SCP-1232 can cause burns and irritation.
+
+## Description
+
+**Physical Appearance:**  The anomaly appears to be a sphere with a drill protruding from its surface. The sphere itself is made of a metallic substance, while the drill is composed of a black, oily substance. The diameter of the sphere is approximately 2 meters, and the drill protrudes from the surface by approximately 1 meter.
+
+**Anomalous Properties:**  When an object is inserted into SCP-1232, the object will be consumed by the cage and will disappear. After a few seconds, the object will reappear outside of the cage, as if it had been teleported. This process can be repeated as many times as desired.
+
+**Origin:**  The exact origin of SCP-1232 is unknown. It was found in a remote location in the desert, and its purpose is still unknown.
+
+**Relevant History:**  SCP-1232 was first discovered by a group of hikers who found it in the desert. They contacted the SCP Foundation and requested that it be contained, which was done quickly and without incident.
