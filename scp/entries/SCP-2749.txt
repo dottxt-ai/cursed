@@ -1,0 +1,20 @@
+# SCP-2749
+
+**Object Class:** Thaumiel
+**Entry Type:** Weapon
+
+## Special Containment Procedures
+
+- **Physical Requirements:** SCP-2749 should be contained in an open area with ample natural light. It should be stored in a soundproof room that is accessible only to authorized personnel. Routine testing of the object's properties should be conducted at regular intervals and documented.    1.
+- **Security Measures:** Readers should be prepared to use Class C ammunitions to contain SCP-2749 if it ever activates. All individuals within 10 meters (32.8 feet) of the object should be told to take cover. Class C Lockheed Humanoid Robotic Agent Stritalok should be deployed to ensure containment. Once the object has been deactivated and the localized supernatural aspect of the incident has dissipated, Class D Overwatch personnel should be sent to handle the matter. In the event that the object is activated again, Class C Terran Megasapien Stritalok should be sent to neutralize the object.    3.
+- **Handling Instructions:** SCP-2749 should only be handled by authorized personnel. There should be a lock mechanism in place to prevent unauthorized individuals from accessing the object. Disconnection of the object's wiring should only be carried out by authorized individuals wearing proper personal protective equipment and receiving training. Any individuals who have come into contact with the object should be debriefed and monitored for abnormal behavior or memory loss.    2.
+
+## Description
+
+**Physical Appearance:** A small brass lantern with an eye-shaped keyhole carved into its side
+
+**Anomalous Properties:** When activated, SCP-2749 emits light from its base that illuminates a triangular-shaped area of approximately two square meters in size. During its activation, SCP-2749 also emits a low level hum that can be heard by individuals within the illuminated area. If an individual looks directly into the lantern's light, they will experience an intense flashback to a traumatic event in their past, after which they will be unable to communicate normally for approximately five minutes. Any attempts to talk to or explain the event's occurrence to the affected individual will result in them being agitated and aggresive towards the individual they were speaking to. If the affected individual succumbs to physical harm, they will explode, damaging nearby individuals and causing Class D Overwatch personnel to take cover until SCP-2749 is deactivated.
+
+**Origin:** SCP-2749 is rumored to have been created by the Royal Society of England, after receiving numerous reports of disappearances, mysteries, and strange happenings all over London. The lantern was created to serve as a navigational and tactical tool for the Royal Society's members, who would use it to light dark and cramped areas, such as basements and attics. However, the Royal Society's expeditions would often turn violent, with some of the survivors claiming that SCP-2749 was responsible. The Royal Society would soon dissolve after this event, and SCP-2749 would be lost to the world.
+
+**Relevant History:** SCP-2749 has been discovered five times, with each discovery resulting in the death of the individuals who found it. It is believed that the object has been left in the possession of the Thaumiel Class SCP Foundation, with the exception of the fourth discovery, which resulted in the object falling into the hands of the Foundation's former Director. The Director would later use SCP-2749 as a tool to ensure her authority over the Foundation, as well as a way of ensuring that her views are upheld.     From her first discovery of SCP-2749 in 1851, the Director used the object to fuel her goal of world domination. She would use the suppressive nature of the lantern to keep those who stood in her way in check, killing many individuals who she perceived as a threat during her rule. She would also use the light emitted by SCP-2749 to divert attention away from her plans and leading to her ultimate downfall in 1974.    1.
